@@ -76,6 +76,9 @@ theme = 'hugo-theme-stack'
 
     customCSS = ["css/custom.css"]
 
+    # Simple favicon configuration - Stack theme expects a single string
+    favicon = "/favicon/favicon.ico"
+
 # Related content configuration
 [related]
     includeNewer = true

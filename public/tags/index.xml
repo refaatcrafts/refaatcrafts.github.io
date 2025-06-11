@@ -6,20 +6,52 @@
         <description>Recent content in Tags on Hassan Refaat</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 15 Jan 2025 09:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Functional Programming</title>
-        <link>http://localhost:1313/tags/functional-programming/</link>
-        <pubDate>Wed, 15 Jan 2025 09:00:00 +0000</pubDate>
+        <lastBuildDate>Wed, 11 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Best-Practices</title>
+        <link>http://localhost:1313/tags/best-practices/</link>
+        <pubDate>Wed, 11 Jun 2025 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/tags/functional-programming/</guid>
+        <guid>http://localhost:1313/tags/best-practices/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Cqrs</title>
+        <link>http://localhost:1313/tags/cqrs/</link>
+        <pubDate>Wed, 11 Jun 2025 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/tags/cqrs/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Design-Patterns</title>
+        <link>http://localhost:1313/tags/design-patterns/</link>
+        <pubDate>Wed, 11 Jun 2025 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/tags/design-patterns/</guid>
         <description></description>
         </item>
         <item>
         <title>Java</title>
         <link>http://localhost:1313/tags/java/</link>
-        <pubDate>Wed, 15 Jan 2025 09:00:00 +0000</pubDate>
+        <pubDate>Wed, 11 Jun 2025 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/tags/java/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Software-Architecture</title>
+        <link>http://localhost:1313/tags/software-architecture/</link>
+        <pubDate>Wed, 11 Jun 2025 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/tags/software-architecture/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Functional Programming</title>
+        <link>http://localhost:1313/tags/functional-programming/</link>
+        <pubDate>Wed, 15 Jan 2025 09:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/tags/functional-programming/</guid>
         <description></description>
         </item>
         <item>
@@ -36,6 +68,38 @@
         <pubDate>Wed, 15 Jan 2025 09:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/tags/web/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Database</title>
+        <link>http://localhost:1313/tags/database/</link>
+        <pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/tags/database/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Hibernate</title>
+        <link>http://localhost:1313/tags/hibernate/</link>
+        <pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/tags/hibernate/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>JPA</title>
+        <link>http://localhost:1313/tags/jpa/</link>
+        <pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/tags/jpa/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Performance</title>
+        <link>http://localhost:1313/tags/performance/</link>
+        <pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/tags/performance/</guid>
         <description></description>
         </item>
         <item>
@@ -111,14 +175,6 @@
         <description></description>
         </item>
         <item>
-        <title>Best Practices</title>
-        <link>http://localhost:1313/tags/best-practices/</link>
-        <pubDate>Mon, 18 Sep 2023 11:30:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/tags/best-practices/</guid>
-        <description></description>
-        </item>
-        <item>
         <title>Clean Code</title>
         <link>http://localhost:1313/tags/clean-code/</link>
         <pubDate>Mon, 18 Sep 2023 11:30:00 +0000</pubDate>
@@ -180,14 +236,6 @@
         <pubDate>Fri, 25 Aug 2023 13:45:00 +0000</pubDate>
         
         <guid>http://localhost:1313/tags/cloud-native/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Design Patterns</title>
-        <link>http://localhost:1313/tags/design-patterns/</link>
-        <pubDate>Fri, 25 Aug 2023 13:45:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/tags/design-patterns/</guid>
         <description></description>
         </item>
         <item>

@@ -6,12 +6,28 @@
         <description>Recent content in Categories on Hassan Refaat</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 15 Jan 2025 09:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 11 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Design Patterns</title>
+        <link>http://localhost:1313/categories/design-patterns/</link>
+        <pubDate>Wed, 11 Jun 2025 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/categories/design-patterns/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>Java</title>
         <link>http://localhost:1313/categories/java/</link>
-        <pubDate>Wed, 15 Jan 2025 09:00:00 +0000</pubDate>
+        <pubDate>Wed, 11 Jun 2025 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/categories/java/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Software Architecture</title>
+        <link>http://localhost:1313/categories/software-architecture/</link>
+        <pubDate>Wed, 11 Jun 2025 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/categories/software-architecture/</guid>
         <description></description>
         </item>
         <item>
@@ -28,6 +44,30 @@
         <pubDate>Wed, 15 Jan 2025 09:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/categories/web/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Database</title>
+        <link>http://localhost:1313/categories/database/</link>
+        <pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/categories/database/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>JPA</title>
+        <link>http://localhost:1313/categories/jpa/</link>
+        <pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/categories/jpa/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Performance</title>
+        <link>http://localhost:1313/categories/performance/</link>
+        <pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/categories/performance/</guid>
         <description></description>
         </item>
         <item>
@@ -60,14 +100,6 @@
         <pubDate>Sun, 15 Oct 2023 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/categories/tutorials/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Software Architecture</title>
-        <link>http://localhost:1313/categories/software-architecture/</link>
-        <pubDate>Mon, 18 Sep 2023 11:30:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/categories/software-architecture/</guid>
         <description></description>
         </item>
         <item>

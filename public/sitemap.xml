@@ -3,24 +3,48 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-01-15T09:00:00+00:00</lastmod>
+    <lastmod>2025-06-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/best-practices/</loc>
+    <lastmod>2025-06-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2025-01-15T09:00:00+00:00</lastmod>
+    <lastmod>2025-06-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/cqrs/</loc>
+    <lastmod>2025-06-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/design-patterns/</loc>
+    <lastmod>2025-06-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/design-patterns/</loc>
+    <lastmod>2025-06-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/java/</loc>
+    <lastmod>2025-06-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/java/</loc>
+    <lastmod>2025-06-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/</loc>
+    <lastmod>2025-06-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/software-architecture/</loc>
+    <lastmod>2025-06-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/software-architecture/</loc>
+    <lastmod>2025-06-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-06-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/understanding-cqrs-pattern/</loc>
+    <lastmod>2025-06-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/functional-programming/</loc>
     <lastmod>2025-01-15T09:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/post/java-streams-introduction/</loc>
-    <lastmod>2025-01-15T09:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/java/</loc>
-    <lastmod>2025-01-15T09:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/java/</loc>
-    <lastmod>2025-01-15T09:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/post/</loc>
     <lastmod>2025-01-15T09:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/programming/</loc>
@@ -29,14 +53,35 @@
     <loc>http://localhost:1313/tags/streams-api/</loc>
     <lastmod>2025-01-15T09:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2025-01-15T09:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/categories/web/</loc>
     <lastmod>2025-01-15T09:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/web/</loc>
     <lastmod>2025-01-15T09:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/database/</loc>
+    <lastmod>2024-07-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/database/</loc>
+    <lastmod>2024-07-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/hibernate/</loc>
+    <lastmod>2024-07-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/i-hate-orms/</loc>
+    <lastmod>2024-07-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/jpa/</loc>
+    <lastmod>2024-07-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/jpa/</loc>
+    <lastmod>2024-07-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/performance/</loc>
+    <lastmod>2024-07-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/performance/</loc>
+    <lastmod>2024-07-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/post/spring-boot-rest-api/</loc>
     <lastmod>2023-12-10T10:15:00+00:00</lastmod>
@@ -86,16 +131,10 @@
     <loc>http://localhost:1313/tags/web-development/</loc>
     <lastmod>2023-10-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/best-practices/</loc>
-    <lastmod>2023-09-18T11:30:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/clean-code/</loc>
     <lastmod>2023-09-18T11:30:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/object-oriented-design/</loc>
-    <lastmod>2023-09-18T11:30:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/software-architecture/</loc>
     <lastmod>2023-09-18T11:30:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/solid-principles/</loc>
@@ -123,9 +162,6 @@
     <lastmod>2023-08-25T13:45:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/cloud-native/</loc>
-    <lastmod>2023-08-25T13:45:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/design-patterns/</loc>
     <lastmod>2023-08-25T13:45:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/distributed-systems/</loc>
