@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Hassan Refaat</title>
-        <link>http://localhost:1313/</link>
+        <link>http://localhost:50511/</link>
         <description>Recent content on Hassan Refaat</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 11 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 11 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:50511/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Understanding CQRS Pattern with Java Examples</title>
-        <link>http://localhost:1313/post/understanding-cqrs-pattern/</link>
+        <link>http://localhost:50511/post/understanding-cqrs-pattern/</link>
         <pubDate>Wed, 11 Jun 2025 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/post/understanding-cqrs-pattern/</guid>
-        <description>&lt;img src="http://localhost:1313/post/understanding-cqrs-pattern/image.png" alt="Featured image of post Understanding CQRS Pattern with Java Examples" /&gt;&lt;p&gt;Command Query Responsibility Segregation (CQRS) is an architectural pattern that separates read and write operations for a data store. In this post, we&amp;rsquo;ll explore CQRS implementation in Java with practical examples.&lt;/p&gt;
+        <guid>http://localhost:50511/post/understanding-cqrs-pattern/</guid>
+        <description>&lt;img src="http://localhost:50511/post/understanding-cqrs-pattern/image.png" alt="Featured image of post Understanding CQRS Pattern with Java Examples" /&gt;&lt;p&gt;Command Query Responsibility Segregation (CQRS) is an architectural pattern that separates read and write operations for a data store. In this post, we&amp;rsquo;ll explore CQRS implementation in Java with practical examples.&lt;/p&gt;
 &lt;h2 id=&#34;what-is-cqrs&#34;&gt;What is CQRS?
 &lt;/h2&gt;&lt;p&gt;CQRS stands for Command Query Responsibility Segregation. The main concept is to separate the read and write operations of your application:&lt;/p&gt;
 &lt;ul&gt;
@@ -368,11 +368,11 @@
         </item>
         <item>
         <title>Introduction to Java Streams API</title>
-        <link>http://localhost:1313/post/java-streams-introduction/</link>
+        <link>http://localhost:50511/post/java-streams-introduction/</link>
         <pubDate>Wed, 15 Jan 2025 09:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/post/java-streams-introduction/</guid>
-        <description>&lt;img src="http://localhost:1313/post/java-streams-introduction/image.png" alt="Featured image of post Introduction to Java Streams API" /&gt;&lt;h1 id=&#34;introduction-to-java-streams-api&#34;&gt;Introduction to Java Streams API
+        <guid>http://localhost:50511/post/java-streams-introduction/</guid>
+        <description>&lt;img src="http://localhost:50511/post/java-streams-introduction/image.png" alt="Featured image of post Introduction to Java Streams API" /&gt;&lt;h1 id=&#34;introduction-to-java-streams-api&#34;&gt;Introduction to Java Streams API
 &lt;/h1&gt;&lt;p&gt;Java 8 introduced one of the most significant features to the language: the Streams API. This powerful addition allows developers to process collections of objects in a declarative way, similar to SQL queries.&lt;/p&gt;
 &lt;h2 id=&#34;what-are-streams&#34;&gt;What are Streams?
 &lt;/h2&gt;&lt;p&gt;Streams represent a sequence of elements and support different kinds of operations to perform computations on those elements. Operations on streams can be either intermediate or terminal.&lt;/p&gt;
@@ -469,10 +469,10 @@
         </item>
         <item>
         <title>I Hate ORMs: Hibernate Edition</title>
-        <link>http://localhost:1313/post/i-hate-orms/</link>
+        <link>http://localhost:50511/post/i-hate-orms/</link>
         <pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/post/i-hate-orms/</guid>
+        <guid>http://localhost:50511/post/i-hate-orms/</guid>
         <description>&lt;p&gt;Let me explain why I don&amp;rsquo;t like ORMs. They add a lot of abstraction, especially if you&amp;rsquo;re already working with Java and Spring, which have tons of abstraction layers. Yes, ORMs are useful and powerful, but as the saying goes, with great power comes great responsibility. Here&amp;rsquo;s an example to illustrate my point:&lt;/p&gt;
 &lt;p&gt;One of the unclear things when you work with JPA and Hibernate is the &lt;code&gt;saveAll()&lt;/code&gt; method. Many of us might think it does batch inserts by default, but it doesn&amp;rsquo;t. Even when you think you&amp;rsquo;ve configured it correctly, it often still doesn&amp;rsquo;t work as expected.&lt;/p&gt;
 &lt;p&gt;For example, look at this code:&lt;/p&gt;
@@ -689,11 +689,11 @@
         </item>
         <item>
         <title>Building RESTful APIs with Spring Boot</title>
-        <link>http://localhost:1313/post/spring-boot-rest-api/</link>
+        <link>http://localhost:50511/post/spring-boot-rest-api/</link>
         <pubDate>Sun, 10 Dec 2023 10:15:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/post/spring-boot-rest-api/</guid>
-        <description>&lt;img src="http://localhost:1313/post/spring-boot-rest-api/image.png" alt="Featured image of post Building RESTful APIs with Spring Boot" /&gt;&lt;h1 id=&#34;building-restful-apis-with-spring-boot&#34;&gt;Building RESTful APIs with Spring Boot
+        <guid>http://localhost:50511/post/spring-boot-rest-api/</guid>
+        <description>&lt;img src="http://localhost:50511/post/spring-boot-rest-api/image.png" alt="Featured image of post Building RESTful APIs with Spring Boot" /&gt;&lt;h1 id=&#34;building-restful-apis-with-spring-boot&#34;&gt;Building RESTful APIs with Spring Boot
 &lt;/h1&gt;&lt;p&gt;Spring Boot has revolutionized the way we build Java applications, especially when it comes to creating RESTful APIs. In this post, we&amp;rsquo;ll walk through the process of building a simple but robust REST API using Spring Boot.&lt;/p&gt;
 &lt;h2 id=&#34;setting-up-the-project&#34;&gt;Setting Up the Project
 &lt;/h2&gt;&lt;p&gt;The easiest way to start a Spring Boot project is by using the Spring Initializer (&lt;a class=&#34;link&#34; href=&#34;https://start.spring.io/%29&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -1062,11 +1062,11 @@
         </item>
         <item>
         <title>Core Principles of Test-Driven Development</title>
-        <link>http://localhost:1313/post/test-driven-development-principles/</link>
+        <link>http://localhost:50511/post/test-driven-development-principles/</link>
         <pubDate>Sun, 05 Nov 2023 14:30:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/post/test-driven-development-principles/</guid>
-        <description>&lt;img src="http://localhost:1313/post/test-driven-development-principles/image.png" alt="Featured image of post Core Principles of Test-Driven Development" /&gt;&lt;h1 id=&#34;core-principles-of-test-driven-development&#34;&gt;Core Principles of Test-Driven Development
+        <guid>http://localhost:50511/post/test-driven-development-principles/</guid>
+        <description>&lt;img src="http://localhost:50511/post/test-driven-development-principles/image.png" alt="Featured image of post Core Principles of Test-Driven Development" /&gt;&lt;h1 id=&#34;core-principles-of-test-driven-development&#34;&gt;Core Principles of Test-Driven Development
 &lt;/h1&gt;&lt;p&gt;Test-Driven Development (TDD) is a software development approach where tests are written before the code they are testing. This article explores the fundamental principles of TDD and how to implement it effectively in your projects.&lt;/p&gt;
 &lt;h2 id=&#34;the-tdd-cycle-red-green-refactor&#34;&gt;The TDD Cycle: Red, Green, Refactor
 &lt;/h2&gt;&lt;p&gt;The TDD approach follows a simple yet powerful cycle:&lt;/p&gt;
@@ -1145,11 +1145,11 @@
         </item>
         <item>
         <title>How to Add Related Content to Your Hugo Theme</title>
-        <link>http://localhost:1313/post/adding-related-content-to-hugo/</link>
+        <link>http://localhost:50511/post/adding-related-content-to-hugo/</link>
         <pubDate>Sun, 15 Oct 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/post/adding-related-content-to-hugo/</guid>
-        <description>&lt;img src="http://localhost:1313/post/adding-related-content-to-hugo/cover.png" alt="Featured image of post How to Add Related Content to Your Hugo Theme" /&gt;&lt;h2 id=&#34;why-related-content-matters&#34;&gt;Why Related Content Matters
+        <guid>http://localhost:50511/post/adding-related-content-to-hugo/</guid>
+        <description>&lt;img src="http://localhost:50511/post/adding-related-content-to-hugo/cover.png" alt="Featured image of post How to Add Related Content to Your Hugo Theme" /&gt;&lt;h2 id=&#34;why-related-content-matters&#34;&gt;Why Related Content Matters
 &lt;/h2&gt;&lt;p&gt;Related content sections are a powerful way to keep visitors engaged with your website by suggesting relevant articles they might be interested in. They reduce bounce rates, increase page views, and improve the overall user experience by helping readers discover more of your content.&lt;/p&gt;
 &lt;h2 id=&#34;how-hugo-handles-related-content&#34;&gt;How Hugo Handles Related Content
 &lt;/h2&gt;&lt;p&gt;Hugo has a built-in system for identifying and displaying related content based on various factors like tags, categories, and publication dates. Unlike some other platforms that might use complex algorithms or third-party services, Hugo handles this functionality natively.&lt;/p&gt;
@@ -1324,11 +1324,11 @@
         </item>
         <item>
         <title>SOLID Principles in Java: A Comprehensive Guide</title>
-        <link>http://localhost:1313/post/solid-principles/</link>
+        <link>http://localhost:50511/post/solid-principles/</link>
         <pubDate>Mon, 18 Sep 2023 11:30:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/post/solid-principles/</guid>
-        <description>&lt;img src="http://localhost:1313/post/solid-principles/image.png" alt="Featured image of post SOLID Principles in Java: A Comprehensive Guide" /&gt;&lt;h1 id=&#34;solid-principles-in-java-a-comprehensive-guide&#34;&gt;SOLID Principles in Java: A Comprehensive Guide
+        <guid>http://localhost:50511/post/solid-principles/</guid>
+        <description>&lt;img src="http://localhost:50511/post/solid-principles/image.png" alt="Featured image of post SOLID Principles in Java: A Comprehensive Guide" /&gt;&lt;h1 id=&#34;solid-principles-in-java-a-comprehensive-guide&#34;&gt;SOLID Principles in Java: A Comprehensive Guide
 &lt;/h1&gt;&lt;p&gt;The SOLID principles are a set of five design principles that help developers create more maintainable, flexible, and scalable software. These principles were introduced by Robert C. Martin (Uncle Bob) and have become fundamental guidelines for object-oriented software design.&lt;/p&gt;
 &lt;h2 id=&#34;what-are-solid-principles&#34;&gt;What are SOLID Principles?
 &lt;/h2&gt;&lt;p&gt;SOLID is an acronym where each letter represents a principle:&lt;/p&gt;
@@ -2150,11 +2150,11 @@ Abstractions should not depend on details. Details should depend on abstractions
         </item>
         <item>
         <title>Markdown Syntax Guide</title>
-        <link>http://localhost:1313/post/markdown-syntax/</link>
+        <link>http://localhost:50511/post/markdown-syntax/</link>
         <pubDate>Thu, 07 Sep 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/post/markdown-syntax/</guid>
-        <description>&lt;img src="http://localhost:1313/post/markdown-syntax/image.png" alt="Featured image of post Markdown Syntax Guide" /&gt;&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;
+        <guid>http://localhost:50511/post/markdown-syntax/</guid>
+        <description>&lt;img src="http://localhost:50511/post/markdown-syntax/image.png" alt="Featured image of post Markdown Syntax Guide" /&gt;&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;
 &lt;h2 id=&#34;headings&#34;&gt;Headings
 &lt;/h2&gt;&lt;p&gt;The following HTML &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt;—&lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt; elements represent six levels of section headings. &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt; is the highest section level while &lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt; is the lowest.&lt;/p&gt;
 &lt;h1 id=&#34;h1&#34;&gt;H1
@@ -2348,11 +2348,11 @@ Abstractions should not depend on details. Details should depend on abstractions
         </item>
         <item>
         <title>Essential Microservices Design Patterns</title>
-        <link>http://localhost:1313/post/microservices-patterns/</link>
+        <link>http://localhost:50511/post/microservices-patterns/</link>
         <pubDate>Fri, 25 Aug 2023 13:45:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/post/microservices-patterns/</guid>
-        <description>&lt;img src="http://localhost:1313/post/microservices-patterns/image.png" alt="Featured image of post Essential Microservices Design Patterns" /&gt;&lt;h1 id=&#34;essential-microservices-design-patterns&#34;&gt;Essential Microservices Design Patterns
+        <guid>http://localhost:50511/post/microservices-patterns/</guid>
+        <description>&lt;img src="http://localhost:50511/post/microservices-patterns/image.png" alt="Featured image of post Essential Microservices Design Patterns" /&gt;&lt;h1 id=&#34;essential-microservices-design-patterns&#34;&gt;Essential Microservices Design Patterns
 &lt;/h1&gt;&lt;p&gt;Microservices architecture has become the standard for building scalable, resilient, and maintainable applications. However, distributed systems bring their own challenges. This post explores essential design patterns that help tackle these challenges effectively.&lt;/p&gt;
 &lt;h2 id=&#34;communication-patterns&#34;&gt;Communication Patterns
 &lt;/h2&gt;&lt;h3 id=&#34;1-api-gateway-pattern&#34;&gt;1. API Gateway Pattern
@@ -3082,10 +3082,10 @@ Abstractions should not depend on details. Details should depend on abstractions
         </item>
         <item>
         <title>Math Typesetting</title>
-        <link>http://localhost:1313/post/math-typesetting/</link>
+        <link>http://localhost:50511/post/math-typesetting/</link>
         <pubDate>Thu, 24 Aug 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/post/math-typesetting/</guid>
+        <guid>http://localhost:50511/post/math-typesetting/</guid>
         <description>&lt;p&gt;Stack has built-in support for math typesetting using &lt;a class=&#34;link&#34; href=&#34;https://katex.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;KaTeX&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;It&amp;rsquo;s not enabled by default side-wide,&lt;/strong&gt; but you can enable it for individual posts by adding &lt;code&gt;math: true&lt;/code&gt; to the front matter. Or you can enable it side-wide by adding &lt;code&gt;math = true&lt;/code&gt; to the &lt;code&gt;params.article&lt;/code&gt; section in &lt;code&gt;config.toml&lt;/code&gt;.&lt;/p&gt;
@@ -3134,18 +3134,18 @@ $$&lt;/p&gt;
         </item>
         <item>
         <title>Archives</title>
-        <link>http://localhost:1313/page/archives/</link>
+        <link>http://localhost:50511/page/archives/</link>
         <pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/page/archives/</guid>
+        <guid>http://localhost:50511/page/archives/</guid>
         <description></description>
         </item>
         <item>
         <title>Profile</title>
-        <link>http://localhost:1313/profile/</link>
+        <link>http://localhost:50511/profile/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/profile/</guid>
+        <guid>http://localhost:50511/profile/</guid>
         <description>&lt;h1 id=&#34;-hassan-refaat&#34;&gt;👨‍💻 Hassan Refaat
 &lt;/h1&gt;&lt;h2 id=&#34;-software-engineer&#34;&gt;🚀 Software Engineer
 &lt;/h2&gt;&lt;p&gt;Product-minded Backend Software Engineer with 2+ years of expertise delivering scalable systems that drive business growth. Passionate about clean code, maintaining high-quality architectures, and creating adaptable solutions that evolve with business needs. Proven track record of balancing technical excellence with pragmatic implementation to build efficient, reliable backend systems.&lt;/p&gt;
@@ -3600,10 +3600,10 @@ Cumulative GPA: 3.2/4.0&lt;/p&gt;
         </item>
         <item>
         <title>Search</title>
-        <link>http://localhost:1313/page/search/</link>
+        <link>http://localhost:50511/page/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/page/search/</guid>
+        <guid>http://localhost:50511/page/search/</guid>
         <description></description>
         </item>
         

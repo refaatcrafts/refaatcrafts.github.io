@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>SOLID Principles on Hassan Refaat</title>
-        <link>http://localhost:1313/tags/solid-principles/</link>
+        <link>http://localhost:50511/tags/solid-principles/</link>
         <description>Recent content in SOLID Principles on Hassan Refaat</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Mon, 18 Sep 2023 11:30:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/solid-principles/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 18 Sep 2023 11:30:00 +0000</lastBuildDate><atom:link href="http://localhost:50511/tags/solid-principles/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>SOLID Principles in Java: A Comprehensive Guide</title>
-        <link>http://localhost:1313/post/solid-principles/</link>
+        <link>http://localhost:50511/post/solid-principles/</link>
         <pubDate>Mon, 18 Sep 2023 11:30:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/post/solid-principles/</guid>
-        <description>&lt;img src="http://localhost:1313/post/solid-principles/image.png" alt="Featured image of post SOLID Principles in Java: A Comprehensive Guide" /&gt;&lt;h1 id=&#34;solid-principles-in-java-a-comprehensive-guide&#34;&gt;SOLID Principles in Java: A Comprehensive Guide
+        <guid>http://localhost:50511/post/solid-principles/</guid>
+        <description>&lt;img src="http://localhost:50511/post/solid-principles/image.png" alt="Featured image of post SOLID Principles in Java: A Comprehensive Guide" /&gt;&lt;h1 id=&#34;solid-principles-in-java-a-comprehensive-guide&#34;&gt;SOLID Principles in Java: A Comprehensive Guide
 &lt;/h1&gt;&lt;p&gt;The SOLID principles are a set of five design principles that help developers create more maintainable, flexible, and scalable software. These principles were introduced by Robert C. Martin (Uncle Bob) and have become fundamental guidelines for object-oriented software design.&lt;/p&gt;
 &lt;h2 id=&#34;what-are-solid-principles&#34;&gt;What are SOLID Principles?
 &lt;/h2&gt;&lt;p&gt;SOLID is an acronym where each letter represents a principle:&lt;/p&gt;

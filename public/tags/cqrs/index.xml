@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Cqrs on Hassan Refaat</title>
-        <link>http://localhost:1313/tags/cqrs/</link>
+        <link>http://localhost:50511/tags/cqrs/</link>
         <description>Recent content in Cqrs on Hassan Refaat</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 11 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/cqrs/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 11 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:50511/tags/cqrs/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Understanding CQRS Pattern with Java Examples</title>
-        <link>http://localhost:1313/post/understanding-cqrs-pattern/</link>
+        <link>http://localhost:50511/post/understanding-cqrs-pattern/</link>
         <pubDate>Wed, 11 Jun 2025 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/post/understanding-cqrs-pattern/</guid>
-        <description>&lt;img src="http://localhost:1313/post/understanding-cqrs-pattern/image.png" alt="Featured image of post Understanding CQRS Pattern with Java Examples" /&gt;&lt;p&gt;Command Query Responsibility Segregation (CQRS) is an architectural pattern that separates read and write operations for a data store. In this post, we&amp;rsquo;ll explore CQRS implementation in Java with practical examples.&lt;/p&gt;
+        <guid>http://localhost:50511/post/understanding-cqrs-pattern/</guid>
+        <description>&lt;img src="http://localhost:50511/post/understanding-cqrs-pattern/image.png" alt="Featured image of post Understanding CQRS Pattern with Java Examples" /&gt;&lt;p&gt;Command Query Responsibility Segregation (CQRS) is an architectural pattern that separates read and write operations for a data store. In this post, we&amp;rsquo;ll explore CQRS implementation in Java with practical examples.&lt;/p&gt;
 &lt;h2 id=&#34;what-is-cqrs&#34;&gt;What is CQRS?
 &lt;/h2&gt;&lt;p&gt;CQRS stands for Command Query Responsibility Segregation. The main concept is to separate the read and write operations of your application:&lt;/p&gt;
 &lt;ul&gt;
