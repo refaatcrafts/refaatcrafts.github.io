@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Kent Beck on Hassan Refaat</title>
+        <link>http://localhost:1313/tags/kent-beck/</link>
+        <description>Recent content in Kent Beck on Hassan Refaat</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Sun, 13 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/kent-beck/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Summarizing Tidy First Book</title>
+        <link>http://localhost:1313/post/tidy-first/</link>
+        <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/post/tidy-first/</guid>
+        <description>&lt;img src="http://localhost:1313/image.png" alt="Featured image of post Summarizing Tidy First Book" /&gt;&lt;p&gt;Note: This blog post is based on my personal notes from reading Tidy First? by Kent Beck, rewritten and restructured by AI to create a polished and cohesive article.&lt;/p&gt;
+&lt;h1 id=&#34;tidy-first-a-practical-guide-to-cleaner-more-maintainable-code&#34;&gt;Tidy First? A Practical Guide to Cleaner, More Maintainable Code
+&lt;/h1&gt;&lt;p&gt;If you&amp;rsquo;ve ever stared at a messy codebase and wondered, &amp;ldquo;How do I even start fixing this?&amp;rdquo; then Tidy First? by Kent Beck is the book for you. As the creator of Extreme Programming and a pioneer of software patterns, Beck offers a practical, approachable guide to tidying up software—making it more readable, maintainable, and easier to change. In this blog post, I’ll summarize the key insights from Tidy First? and share why it’s a must-read for any developer looking to improve their craft.&lt;/p&gt;
+&lt;h2 id=&#34;why-tidy-first&#34;&gt;Why Tidy First?
+&lt;/h2&gt;&lt;p&gt;Software development is a balancing act between delivering features and maintaining a codebase that doesn’t collapse under its own complexity. Beck introduces the concept of tidyings—small, incremental changes to a codebase’s structure that make future behavioral changes easier. These “teensy-weensy” refactorings aren’t about rewriting everything but about making deliberate, bite-sized improvements.&lt;/p&gt;
+&lt;p&gt;The core question of the book is: “I need to change this messy code—what do I do next?” Beck’s answer is to tidy first when it makes sense. Tidying isn’t about perfection; it’s about reducing friction for the next change. By focusing on small steps, you create a codebase that’s easier to understand and adapt, saving time and reducing stress in the long run.&lt;/p&gt;
+&lt;h2 id=&#34;key-lessons-from-tidy-first&#34;&gt;Key Lessons from Tidy First?
+&lt;/h2&gt;&lt;p&gt;The book is divided into four parts: an introduction, specific tidying techniques, managing the tidying process, and the theory behind software design. Here are some standout takeaways:&lt;/p&gt;
+&lt;h3 id=&#34;1-small-safe-steps-are-powerful&#34;&gt;1. Small, Safe Steps Are Powerful
+&lt;/h3&gt;&lt;p&gt;Beck emphasizes that tidying is about incremental improvements. Instead of massive overhauls, focus on small changes like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Guard Clauses:&lt;/strong&gt; Add early return checks to simplify function logic and reduce nesting.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Delete Dead Code:&lt;/strong&gt; Remove unused code to declutter the codebase (trust version control to recover it if needed).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Normalize Symmetries:&lt;/strong&gt; Standardize inconsistent patterns, like lazy initialization, to improve readability.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For example, instead of wrestling with a function like this:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;User&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;getUserData&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;userId&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;boolean&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;includePrivate&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;boolean&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;includeSettings&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// Complex logic...&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;return&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;new&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;User&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Wrap it in a clearer interface:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;User&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;getPublicUserProfile&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;userId&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;return&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;getUserData&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;userId&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;false&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;false&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;This makes the code self-explanatory and easier to maintain.&lt;/p&gt;
+&lt;h3 id=&#34;2-separate-structure-from-behavior&#34;&gt;2. Separate Structure from Behavior
+&lt;/h3&gt;&lt;p&gt;One of Beck’s key insights is the distinction between structural changes (tidying the code’s organization) and behavioral changes (altering what the code does). He recommends keeping these separate in commits or pull requests to make reviews easier and reduce errors. For instance:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tidy first when the mess blocks understanding or makes changes harder.&lt;/li&gt;
+&lt;li&gt;Tidy after when cleanup is quick and the context is fresh.&lt;/li&gt;
+&lt;li&gt;Tidy later for non-urgent improvements that add long-term value.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This separation keeps your workflow clear and helps teammates focus on one type of change at a time.&lt;/p&gt;
+&lt;h3 id=&#34;3-understand-the-economics-of-code&#34;&gt;3. Understand the Economics of Code
+&lt;/h3&gt;&lt;p&gt;Beck dives into the economic principles behind software design, like time value (a feature delivered today is worth more than one delivered tomorrow) and optionality (keeping your options open for future changes). Tidying is an investment in optionality—it makes future changes cheaper and faster. However, over-tidying can waste time, so Beck advises balancing immediate needs with long-term flexibility.&lt;/p&gt;
+&lt;h3 id=&#34;4-coupling-and-cohesion&#34;&gt;4. Coupling and Cohesion
+&lt;/h3&gt;&lt;p&gt;The book’s theoretical section explores coupling (how much one part of the code depends on another) and cohesion (grouping related elements together). Good design minimizes coupling to reduce cascading changes and maximizes cohesion to keep related code close. For example:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Move declarations and initializations together to clarify a variable’s purpose.&lt;/li&gt;
+&lt;li&gt;Extract helper functions to encapsulate clear, reusable logic.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;5-find-your-rhythm&#34;&gt;5. Find Your Rhythm
+&lt;/h3&gt;&lt;p&gt;Tidying is most effective when done in short, focused bursts. Beck suggests alternating between tidying (minutes to an hour) and behavior changes. Over time, you’ll notice that 80% of changes happen in 20% of the codebase—so focus your tidying efforts there. This “paved path” approach ensures you’re cleaning where it matters most.&lt;/p&gt;
+&lt;h2 id=&#34;why-you-should-read-tidy-first&#34;&gt;Why You Should Read Tidy First?
+&lt;/h2&gt;&lt;p&gt;Tidy First? is more than a technical manual; it’s a mindset shift. Beck’s approachable style and focus on small, practical steps make it accessible for developers at all levels. Whether you’re untangling a legacy codebase or refining a new project, the book equips you with tools to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Make code easier to read and change.&lt;/li&gt;
+&lt;li&gt;Balance immediate feature delivery with long-term maintainability.&lt;/li&gt;
+&lt;li&gt;Feel more confident and joyful in your programming work.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Beck’s emphasis on “helping geeks feel safe in the world” resonates deeply. Tidying isn’t just about code—it’s about reducing stress, boosting clarity, and creating a codebase that supports you and your team.&lt;/p&gt;
+&lt;h2 id=&#34;final-thoughts&#34;&gt;Final Thoughts
+&lt;/h2&gt;&lt;p&gt;Tidy First? is a refreshing take on software design that prioritizes practicality and human experience. By focusing on small, intentional tidyings, you can transform messy code into something that’s easier to work with and more enjoyable to maintain. If you’re ready to take control of your codebase and make programming feel less like a battle, give this book a read. It’s like cleaning your desk before starting a big project—sometimes, a little tidying goes a long way.&lt;/p&gt;
+&lt;p&gt;Have you tried tidying your code before making changes? Share your thoughts in the comments below!&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

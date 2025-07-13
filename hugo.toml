@@ -3,6 +3,10 @@ languageCode = 'en-us'
 title = 'Hassan Refaat'
 theme = 'hugo-theme-stack'
 
+[module]
+  [[module.imports]]
+    path = "github.com/KKKZOZ/hugo-admonitions"
+
 # Menu configuration
 [menu]
     [[menu.social]]

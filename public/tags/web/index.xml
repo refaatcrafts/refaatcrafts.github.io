@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Web on Hassan Refaat</title>
-        <link>http://localhost:50511/tags/web/</link>
+        <link>http://localhost:1313/tags/web/</link>
         <description>Recent content in Web on Hassan Refaat</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 15 Jan 2025 09:00:00 +0000</lastBuildDate><atom:link href="http://localhost:50511/tags/web/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 15 Jan 2025 09:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/web/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Introduction to Java Streams API</title>
-        <link>http://localhost:50511/post/java-streams-introduction/</link>
+        <link>http://localhost:1313/post/java-streams-introduction/</link>
         <pubDate>Wed, 15 Jan 2025 09:00:00 +0000</pubDate>
         
-        <guid>http://localhost:50511/post/java-streams-introduction/</guid>
-        <description>&lt;img src="http://localhost:50511/post/java-streams-introduction/image.png" alt="Featured image of post Introduction to Java Streams API" /&gt;&lt;h1 id=&#34;introduction-to-java-streams-api&#34;&gt;Introduction to Java Streams API
+        <guid>http://localhost:1313/post/java-streams-introduction/</guid>
+        <description>&lt;img src="http://localhost:1313/post/java-streams-introduction/image.png" alt="Featured image of post Introduction to Java Streams API" /&gt;&lt;h1 id=&#34;introduction-to-java-streams-api&#34;&gt;Introduction to Java Streams API
 &lt;/h1&gt;&lt;p&gt;Java 8 introduced one of the most significant features to the language: the Streams API. This powerful addition allows developers to process collections of objects in a declarative way, similar to SQL queries.&lt;/p&gt;
 &lt;h2 id=&#34;what-are-streams&#34;&gt;What are Streams?
 &lt;/h2&gt;&lt;p&gt;Streams represent a sequence of elements and support different kinds of operations to perform computations on those elements. Operations on streams can be either intermediate or terminal.&lt;/p&gt;

@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="A summary and  key takeaways from Kent Beck's Tidy First? for cleaner, more maintainable code.">
+<title>Summarizing Tidy First Book</title>
+
+<link rel='canonical' href='http://localhost:1313/post/tidy-first/'>
+
+<link rel="stylesheet" href="/scss/style.min.946cca6c6259ef94ac55abfae7c7bf3291ea3ed5eea17ef77500b257217c6710.css"><meta property='og:title' content="Summarizing Tidy First Book">
+<meta property='og:description' content="A summary and  key takeaways from Kent Beck's Tidy First? for cleaner, more maintainable code.">
+<meta property='og:url' content='http://localhost:1313/post/tidy-first/'>
+<meta property='og:site_name' content='Hassan Refaat'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Tidy First' /><meta property='article:tag' content='Refactoring' /><meta property='article:tag' content='Software Design' /><meta property='article:tag' content='Clean Code' /><meta property='article:published_time' content='2025-07-13T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-07-13T00:00:00&#43;00:00'/><meta property='og:image' content='http://localhost:1313/post/tidy-first/image.png' />
+<meta name="twitter:title" content="Summarizing Tidy First Book">
+<meta name="twitter:description" content="A summary and  key takeaways from Kent Beck's Tidy First? for cleaner, more maintainable code."><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='http://localhost:1313/post/tidy-first/image.png' />
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/favicon/site.webmanifest">
+<link rel="shortcut icon" href="/favicon/favicon.ico">
+<link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    <img src="/img/gogo.png" width="300" height="300" class="site-logo" loading="lazy" alt="Avatar">
+                
+                </a>
+                
+                    <span class="emoji">🚀</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Hassan Refaat</a></h1>
+            <h2 class="site-description">Crafting elegant solutions through code</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://linkedin.com/in/YourLinkedInProfile'
+                        target="_blank"
+                        title="LinkedIn"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+  <rect x="2" y="9" width="4" height="12"></rect>
+  <circle cx="4" cy="4" r="2"></circle>
+</svg>
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='/resume.pdf'
+                        target="_blank"
+                        title="Resume/CV"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="3" y="2" width="18" height="20" rx="2" ry="2"></rect>
+  <path d="M8 6h8"></path>
+  <path d="M8 10h8"></path>
+  <path d="M8 14h4"></path>
+  <path d="M16 18h.01"></path>
+</svg>
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://twitter.com/YourTwitterHandle'
+                        target="_blank"
+                        title="Twitter"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/profile/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>Profile</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#why-tidy-first">Why Tidy First?</a></li>
+    <li><a href="#key-lessons-from-tidy-first">Key Lessons from Tidy First?</a>
+      <ol>
+        <li><a href="#1-small-safe-steps-are-powerful">1. Small, Safe Steps Are Powerful</a></li>
+        <li><a href="#2-separate-structure-from-behavior">2. Separate Structure from Behavior</a></li>
+        <li><a href="#3-understand-the-economics-of-code">3. Understand the Economics of Code</a></li>
+        <li><a href="#4-coupling-and-cohesion">4. Coupling and Cohesion</a></li>
+        <li><a href="#5-find-your-rhythm">5. Find Your Rhythm</a></li>
+      </ol>
+    </li>
+    <li><a href="#why-you-should-read-tidy-first">Why You Should Read Tidy First?</a></li>
+    <li><a href="#final-thoughts">Final Thoughts</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/post/tidy-first/">
+                <img src="/post/tidy-first/image_hu_1b51e01ae66a492d.png"
+                        srcset="/post/tidy-first/image_hu_1b51e01ae66a492d.png 800w, /post/tidy-first/image_hu_26f1efb2d671cddb.png 1600w"
+                        width="800" 
+                        height="360" 
+                        loading="lazy"
+                        alt="Featured image of post Summarizing Tidy First Book" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/books/" >
+                Books
+            </a>
+        
+            <a href="/categories/software-design/" >
+                Software Design
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/post/tidy-first/">Summarizing Tidy First Book</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            A summary and  key takeaways from Kent Beck&#39;s Tidy First? for cleaner, more maintainable code.
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Jul 13, 2025</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    5 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    
+          <link rel="stylesheet" href="/css/vendors/admonitions.css">
+    <div class="admonition info">
+      <div class="admonition-header"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336l24 0 0-64-24 0c-13.3 0-24-10.7-24-24s10.7-24 24-24l48 0c13.3 0 24 10.7 24 24l0 88 8 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-80 0c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>
+        <span>Info</span>
+      </div>
+      <div class="admonition-content">
+        <p>This blog post is based on my personal notes from reading Tidy First? by Kent Beck, rewritten and restructured by AI to create a polished and cohesive article.</p>
+      </div>
+    </div><h1 id="tidy-first-a-practical-guide-to-cleaner-more-maintainable-code">Tidy First? A Practical Guide to Cleaner, More Maintainable Code
+</h1><p>If you&rsquo;ve ever stared at a messy codebase and wondered, &ldquo;How do I even start fixing this?&rdquo; then Tidy First? by Kent Beck is the book for you. As the creator of Extreme Programming and a pioneer of software patterns, Beck offers a practical, approachable guide to tidying up software—making it more readable, maintainable, and easier to change. In this blog post, I’ll summarize the key insights from Tidy First? and share why it’s a must-read for any developer looking to improve their craft.</p>
+<h2 id="why-tidy-first">Why Tidy First?
+</h2><p>Software development is a balancing act between delivering features and maintaining a codebase that doesn’t collapse under its own complexity. Beck introduces the concept of tidyings—small, incremental changes to a codebase’s structure that make future behavioral changes easier. These “teensy-weensy” refactorings aren’t about rewriting everything but about making deliberate, bite-sized improvements.</p>
+<p>The core question of the book is: “I need to change this messy code—what do I do next?” Beck’s answer is to tidy first when it makes sense. Tidying isn’t about perfection; it’s about reducing friction for the next change. By focusing on small steps, you create a codebase that’s easier to understand and adapt, saving time and reducing stress in the long run.</p>
+<h2 id="key-lessons-from-tidy-first">Key Lessons from Tidy First?
+</h2><p>The book is divided into four parts: an introduction, specific tidying techniques, managing the tidying process, and the theory behind software design. Here are some standout takeaways:</p>
+<h3 id="1-small-safe-steps-are-powerful">1. Small, Safe Steps Are Powerful
+</h3><p>Beck emphasizes that tidying is about incremental improvements. Instead of massive overhauls, focus on small changes like:</p>
+<ul>
+<li><strong>Guard Clauses:</strong> Add early return checks to simplify function logic and reduce nesting.</li>
+<li><strong>Delete Dead Code:</strong> Remove unused code to declutter the codebase (trust version control to recover it if needed).</li>
+<li><strong>Normalize Symmetries:</strong> Standardize inconsistent patterns, like lazy initialization, to improve readability.</li>
+</ul>
+<p>For example, instead of wrestling with a function like this:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="n">User</span><span class="w"> </span><span class="nf">getUserData</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">userId</span><span class="p">,</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="n">includePrivate</span><span class="p">,</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="n">includeSettings</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// Complex logic...</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">User</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>Wrap it in a clearer interface:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="n">User</span><span class="w"> </span><span class="nf">getPublicUserProfile</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">userId</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">getUserData</span><span class="p">(</span><span class="n">userId</span><span class="p">,</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w"> </span><span class="kc">false</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>This makes the code self-explanatory and easier to maintain.</p>
+<h3 id="2-separate-structure-from-behavior">2. Separate Structure from Behavior
+</h3><p>One of Beck’s key insights is the distinction between structural changes (tidying the code’s organization) and behavioral changes (altering what the code does). He recommends keeping these separate in commits or pull requests to make reviews easier and reduce errors. For instance:</p>
+<ul>
+<li>Tidy first when the mess blocks understanding or makes changes harder.</li>
+<li>Tidy after when cleanup is quick and the context is fresh.</li>
+<li>Tidy later for non-urgent improvements that add long-term value.</li>
+</ul>
+<p>This separation keeps your workflow clear and helps teammates focus on one type of change at a time.</p>
+<h3 id="3-understand-the-economics-of-code">3. Understand the Economics of Code
+</h3><p>Beck dives into the economic principles behind software design, like time value (a feature delivered today is worth more than one delivered tomorrow) and optionality (keeping your options open for future changes). Tidying is an investment in optionality—it makes future changes cheaper and faster. However, over-tidying can waste time, so Beck advises balancing immediate needs with long-term flexibility.</p>
+<h3 id="4-coupling-and-cohesion">4. Coupling and Cohesion
+</h3><p>The book’s theoretical section explores coupling (how much one part of the code depends on another) and cohesion (grouping related elements together). Good design minimizes coupling to reduce cascading changes and maximizes cohesion to keep related code close. For example:</p>
+<ul>
+<li>Move declarations and initializations together to clarify a variable’s purpose.</li>
+<li>Extract helper functions to encapsulate clear, reusable logic.</li>
+</ul>
+<h3 id="5-find-your-rhythm">5. Find Your Rhythm
+</h3><p>Tidying is most effective when done in short, focused bursts. Beck suggests alternating between tidying (minutes to an hour) and behavior changes. Over time, you’ll notice that 80% of changes happen in 20% of the codebase—so focus your tidying efforts there. This “paved path” approach ensures you’re cleaning where it matters most.</p>
+<h2 id="why-you-should-read-tidy-first">Why You Should Read Tidy First?
+</h2><p>Tidy First? is more than a technical manual; it’s a mindset shift. Beck’s approachable style and focus on small, practical steps make it accessible for developers at all levels. Whether you’re untangling a legacy codebase or refining a new project, the book equips you with tools to:</p>
+<ul>
+<li>Make code easier to read and change.</li>
+<li>Balance immediate feature delivery with long-term maintainability.</li>
+<li>Feel more confident and joyful in your programming work.</li>
+</ul>
+<p>Beck’s emphasis on “helping geeks feel safe in the world” resonates deeply. Tidying isn’t just about code—it’s about reducing stress, boosting clarity, and creating a codebase that supports you and your team.</p>
+<h2 id="final-thoughts">Final Thoughts
+</h2><p>Tidy First? is a refreshing take on software design that prioritizes practicality and human experience. By focusing on small, intentional tidyings, you can transform messy code into something that’s easier to work with and more enjoyable to maintain. If you’re ready to take control of your codebase and make programming feel less like a battle, give this book a read. It’s like cleaning your desk before starting a big project—sometimes, a little tidying goes a long way.</p>
+<p>Have you tried tidying your code before making changes? Share your thoughts in the comments below!</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/tidy-first/">Tidy First</a>
+        
+            <a href="/tags/refactoring/">Refactoring</a>
+        
+            <a href="/tags/software-design/">Software Design</a>
+        
+            <a href="/tags/clean-code/">Clean Code</a>
+        
+    </section>
+
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/post/solid-principles/">
+        
+        
+            <div class="article-image">
+                <img src="/post/solid-principles/image.1da290ffd324ba3d8df74ba3b23a33fb_hu_7fd990c6fbd538ee.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post SOLID Principles in Java: A Comprehensive Guide"
+                        
+                        data-hash="md5-HaKQ/9Mkuj2N90ujsjoz&#43;w==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">SOLID Principles in Java: A Comprehensive Guide</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2025 Hassan Refaat
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.38c9affbe7bd75d582ab1dbf843bad3e1839625efcecc67fb628e94ee9771504.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

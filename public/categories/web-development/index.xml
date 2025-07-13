@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Web Development on Hassan Refaat</title>
-        <link>http://localhost:50511/categories/web-development/</link>
+        <link>http://localhost:1313/categories/web-development/</link>
         <description>Recent content in Web Development on Hassan Refaat</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sun, 10 Dec 2023 10:15:00 +0000</lastBuildDate><atom:link href="http://localhost:50511/categories/web-development/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 10 Dec 2023 10:15:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/web-development/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Building RESTful APIs with Spring Boot</title>
-        <link>http://localhost:50511/post/spring-boot-rest-api/</link>
+        <link>http://localhost:1313/post/spring-boot-rest-api/</link>
         <pubDate>Sun, 10 Dec 2023 10:15:00 +0000</pubDate>
         
-        <guid>http://localhost:50511/post/spring-boot-rest-api/</guid>
-        <description>&lt;img src="http://localhost:50511/post/spring-boot-rest-api/image.png" alt="Featured image of post Building RESTful APIs with Spring Boot" /&gt;&lt;h1 id=&#34;building-restful-apis-with-spring-boot&#34;&gt;Building RESTful APIs with Spring Boot
+        <guid>http://localhost:1313/post/spring-boot-rest-api/</guid>
+        <description>&lt;img src="http://localhost:1313/post/spring-boot-rest-api/image.png" alt="Featured image of post Building RESTful APIs with Spring Boot" /&gt;&lt;h1 id=&#34;building-restful-apis-with-spring-boot&#34;&gt;Building RESTful APIs with Spring Boot
 &lt;/h1&gt;&lt;p&gt;Spring Boot has revolutionized the way we build Java applications, especially when it comes to creating RESTful APIs. In this post, we&amp;rsquo;ll walk through the process of building a simple but robust REST API using Spring Boot.&lt;/p&gt;
 &lt;h2 id=&#34;setting-up-the-project&#34;&gt;Setting Up the Project
 &lt;/h2&gt;&lt;p&gt;The easiest way to start a Spring Boot project is by using the Spring Initializer (&lt;a class=&#34;link&#34; href=&#34;https://start.spring.io/%29&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -381,11 +381,11 @@
         </item>
         <item>
         <title>How to Add Related Content to Your Hugo Theme</title>
-        <link>http://localhost:50511/post/adding-related-content-to-hugo/</link>
+        <link>http://localhost:1313/post/adding-related-content-to-hugo/</link>
         <pubDate>Sun, 15 Oct 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:50511/post/adding-related-content-to-hugo/</guid>
-        <description>&lt;img src="http://localhost:50511/post/adding-related-content-to-hugo/cover.png" alt="Featured image of post How to Add Related Content to Your Hugo Theme" /&gt;&lt;h2 id=&#34;why-related-content-matters&#34;&gt;Why Related Content Matters
+        <guid>http://localhost:1313/post/adding-related-content-to-hugo/</guid>
+        <description>&lt;img src="http://localhost:1313/post/adding-related-content-to-hugo/cover.png" alt="Featured image of post How to Add Related Content to Your Hugo Theme" /&gt;&lt;h2 id=&#34;why-related-content-matters&#34;&gt;Why Related Content Matters
 &lt;/h2&gt;&lt;p&gt;Related content sections are a powerful way to keep visitors engaged with your website by suggesting relevant articles they might be interested in. They reduce bounce rates, increase page views, and improve the overall user experience by helping readers discover more of your content.&lt;/p&gt;
 &lt;h2 id=&#34;how-hugo-handles-related-content&#34;&gt;How Hugo Handles Related Content
 &lt;/h2&gt;&lt;p&gt;Hugo has a built-in system for identifying and displaying related content based on various factors like tags, categories, and publication dates. Unlike some other platforms that might use complex algorithms or third-party services, Hugo handles this functionality natively.&lt;/p&gt;

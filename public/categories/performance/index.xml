@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Performance on Hassan Refaat</title>
-        <link>http://localhost:50511/categories/performance/</link>
+        <link>http://localhost:1313/categories/performance/</link>
         <description>Recent content in Performance on Hassan Refaat</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Tue, 30 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:50511/categories/performance/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 30 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/performance/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>I Hate ORMs: Hibernate Edition</title>
-        <link>http://localhost:50511/post/i-hate-orms/</link>
+        <link>http://localhost:1313/post/i-hate-orms/</link>
         <pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:50511/post/i-hate-orms/</guid>
+        <guid>http://localhost:1313/post/i-hate-orms/</guid>
         <description>&lt;p&gt;Let me explain why I don&amp;rsquo;t like ORMs. They add a lot of abstraction, especially if you&amp;rsquo;re already working with Java and Spring, which have tons of abstraction layers. Yes, ORMs are useful and powerful, but as the saying goes, with great power comes great responsibility. Here&amp;rsquo;s an example to illustrate my point:&lt;/p&gt;
 &lt;p&gt;One of the unclear things when you work with JPA and Hibernate is the &lt;code&gt;saveAll()&lt;/code&gt; method. Many of us might think it does batch inserts by default, but it doesn&amp;rsquo;t. Even when you think you&amp;rsquo;ve configured it correctly, it often still doesn&amp;rsquo;t work as expected.&lt;/p&gt;
 &lt;p&gt;For example, look at this code:&lt;/p&gt;
