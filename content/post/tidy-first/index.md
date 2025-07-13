@@ -16,7 +16,7 @@ tags:
 
 
 > [!INFO]
-> This blog post is based on my personal notes from reading Tidy First? by Kent Beck, rewritten and restructured by AI to create a polished and cohesive article.
+> This blog post is based on my personal notes from reading Tidy First? by Kent Beck, rewritten and restructured by AI to create a polished and cohesive article. You can read my long notes from [this link](https://believed-fir-c10.notion.site/Tidy-First-1c98e50f89898009a234f4c4a79a644c?pvs=73).
 
 # Tidy First? A Practical Guide to Cleaner, More Maintainable Code
 
