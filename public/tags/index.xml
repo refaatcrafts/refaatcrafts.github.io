@@ -15,6 +15,30 @@
         <description></description>
         </item>
         <item>
+        <title>Design-Patterns</title>
+        <link>http://localhost:1313/tags/design-patterns/</link>
+        <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/tags/design-patterns/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Engineering-Practices</title>
+        <link>http://localhost:1313/tags/engineering-practices/</link>
+        <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/tags/engineering-practices/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Leadership</title>
+        <link>http://localhost:1313/tags/leadership/</link>
+        <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/tags/leadership/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>Refactoring</title>
         <link>http://localhost:1313/tags/refactoring/</link>
         <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
@@ -28,6 +52,22 @@
         <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/tags/software-design/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Software-Architecture</title>
+        <link>http://localhost:1313/tags/software-architecture/</link>
+        <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/tags/software-architecture/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>System-Design</title>
+        <link>http://localhost:1313/tags/system-design/</link>
+        <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/tags/system-design/</guid>
         <description></description>
         </item>
         <item>
@@ -79,14 +119,6 @@
         <description></description>
         </item>
         <item>
-        <title>Design-Patterns</title>
-        <link>http://localhost:1313/tags/design-patterns/</link>
-        <pubDate>Wed, 11 Jun 2025 00:00:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/tags/design-patterns/</guid>
-        <description></description>
-        </item>
-        <item>
         <title>Go</title>
         <link>http://localhost:1313/tags/go/</link>
         <pubDate>Wed, 11 Jun 2025 00:00:00 +0000</pubDate>
@@ -103,19 +135,43 @@
         <description></description>
         </item>
         <item>
-        <title>Software-Architecture</title>
-        <link>http://localhost:1313/tags/software-architecture/</link>
-        <pubDate>Wed, 11 Jun 2025 00:00:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/tags/software-architecture/</guid>
-        <description></description>
-        </item>
-        <item>
         <title>Swagger</title>
         <link>http://localhost:1313/tags/swagger/</link>
         <pubDate>Wed, 11 Jun 2025 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/tags/swagger/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Database</title>
+        <link>http://localhost:1313/tags/database/</link>
+        <pubDate>Thu, 13 Feb 2025 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/tags/database/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Hibernate</title>
+        <link>http://localhost:1313/tags/hibernate/</link>
+        <pubDate>Thu, 13 Feb 2025 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/tags/hibernate/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>JPA</title>
+        <link>http://localhost:1313/tags/jpa/</link>
+        <pubDate>Thu, 13 Feb 2025 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/tags/jpa/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Performance</title>
+        <link>http://localhost:1313/tags/performance/</link>
+        <pubDate>Thu, 13 Feb 2025 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/tags/performance/</guid>
         <description></description>
         </item>
         <item>
@@ -140,38 +196,6 @@
         <pubDate>Wed, 15 Jan 2025 09:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/tags/web/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Database</title>
-        <link>http://localhost:1313/tags/database/</link>
-        <pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/tags/database/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Hibernate</title>
-        <link>http://localhost:1313/tags/hibernate/</link>
-        <pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/tags/hibernate/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>JPA</title>
-        <link>http://localhost:1313/tags/jpa/</link>
-        <pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/tags/jpa/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Performance</title>
-        <link>http://localhost:1313/tags/performance/</link>
-        <pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/tags/performance/</guid>
         <description></description>
         </item>
         <item>
@@ -260,38 +284,6 @@
         <pubDate>Mon, 18 Sep 2023 11:30:00 +0000</pubDate>
         
         <guid>http://localhost:1313/tags/solid-principles/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Css</title>
-        <link>http://localhost:1313/tags/css/</link>
-        <pubDate>Thu, 07 Sep 2023 00:00:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/tags/css/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Html</title>
-        <link>http://localhost:1313/tags/html/</link>
-        <pubDate>Thu, 07 Sep 2023 00:00:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/tags/html/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Markdown</title>
-        <link>http://localhost:1313/tags/markdown/</link>
-        <pubDate>Thu, 07 Sep 2023 00:00:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/tags/markdown/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Themes</title>
-        <link>http://localhost:1313/tags/themes/</link>
-        <pubDate>Thu, 07 Sep 2023 00:00:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/tags/themes/</guid>
         <description></description>
         </item>
         <item>

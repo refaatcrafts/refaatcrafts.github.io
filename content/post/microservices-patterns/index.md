@@ -1,7 +1,7 @@
 ---
 title: "Essential Microservices Design Patterns"
 description: "A deep dive into key patterns for building resilient microservices architectures"
-date: 2023-08-25T13:45:00+00:00
+date: 2024-09-25T13:45:00+00:00
 categories: ["Architecture", "Microservices", "System Design"]
 image: image.png
 tags: ["Microservices", "Design Patterns", "Distributed Systems", "Cloud-Native", "Resilience"]

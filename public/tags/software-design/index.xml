@@ -19,7 +19,8 @@
         &lt;span&gt;Info&lt;/span&gt;
       &lt;/div&gt;
       &lt;div class=&#34;admonition-content&#34;&gt;
-        &lt;p&gt;This blog post is based on my personal notes from reading Tidy First? by Kent Beck, rewritten and restructured by AI to create a polished and cohesive article.&lt;/p&gt;
+        &lt;p&gt;This blog post is based on my personal notes from reading Tidy First? by Kent Beck, rewritten and restructured by AI to create a polished and cohesive article. You can read my long notes from &lt;a class=&#34;link&#34; href=&#34;https://believed-fir-c10.notion.site/Tidy-First-1c98e50f89898009a234f4c4a79a644c?pvs=73&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;this link&lt;/a&gt;.&lt;/p&gt;
       &lt;/div&gt;
     &lt;/div&gt;&lt;h1 id=&#34;tidy-first-a-practical-guide-to-cleaner-more-maintainable-code&#34;&gt;Tidy First? A Practical Guide to Cleaner, More Maintainable Code
 &lt;/h1&gt;&lt;p&gt;If you&amp;rsquo;ve ever stared at a messy codebase and wondered, &amp;ldquo;How do I even start fixing this?&amp;rdquo; then Tidy First? by Kent Beck is the book for you. As the creator of Extreme Programming and a pioneer of software patterns, Beck offers a practical, approachable guide to tidying up software—making it more readable, maintainable, and easier to change. In this blog post, I’ll summarize the key insights from Tidy First? and share why it’s a must-read for any developer looking to improve their craft.&lt;/p&gt;

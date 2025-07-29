@@ -15,6 +15,14 @@
         <description></description>
         </item>
         <item>
+        <title>Software Architecture</title>
+        <link>http://localhost:1313/categories/software-architecture/</link>
+        <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/categories/software-architecture/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>Software Design</title>
         <link>http://localhost:1313/categories/software-design/</link>
         <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
@@ -47,11 +55,27 @@
         <description></description>
         </item>
         <item>
-        <title>Software Architecture</title>
-        <link>http://localhost:1313/categories/software-architecture/</link>
-        <pubDate>Wed, 11 Jun 2025 00:00:00 +0000</pubDate>
+        <title>Database</title>
+        <link>http://localhost:1313/categories/database/</link>
+        <pubDate>Thu, 13 Feb 2025 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/categories/software-architecture/</guid>
+        <guid>http://localhost:1313/categories/database/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>JPA</title>
+        <link>http://localhost:1313/categories/jpa/</link>
+        <pubDate>Thu, 13 Feb 2025 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/categories/jpa/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Performance</title>
+        <link>http://localhost:1313/categories/performance/</link>
+        <pubDate>Thu, 13 Feb 2025 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/categories/performance/</guid>
         <description></description>
         </item>
         <item>
@@ -68,30 +92,6 @@
         <pubDate>Wed, 15 Jan 2025 09:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/categories/web/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Database</title>
-        <link>http://localhost:1313/categories/database/</link>
-        <pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/categories/database/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>JPA</title>
-        <link>http://localhost:1313/categories/jpa/</link>
-        <pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/categories/jpa/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Performance</title>
-        <link>http://localhost:1313/categories/performance/</link>
-        <pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/categories/performance/</guid>
         <description></description>
         </item>
         <item>

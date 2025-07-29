@@ -1,7 +1,7 @@
 ---
 title: "Introduction to Java Streams API"
 description: "A comprehensive guide to functional programming with Java Streams"
-date: 2025-01-15T09:00:00+00:00
+date: 2025-08-15T09:00:00+00:00
 image: "image.png"
 categories: ["Programming", "Java","web"]
 tags: ["Java","web", "Functional Programming", "Streams API"]
