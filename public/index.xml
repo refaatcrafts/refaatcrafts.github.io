@@ -6,7 +6,71 @@
         <description>Recent content on Hassan Refaat</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Tue, 29 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 10 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Kotlin vs. Java for New Spring Projects: A 2025 Perspective</title>
+        <link>http://localhost:1313/post/kotlin-vs-java-2025/</link>
+        <pubDate>Sun, 10 Aug 2025 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/post/kotlin-vs-java-2025/</guid>
+        <description>&lt;img src="http://localhost:1313/post/kotlin-vs-java-2025/image.png" alt="Featured image of post Kotlin vs. Java for New Spring Projects: A 2025 Perspective" /&gt;&lt;p&gt;Java has been a cornerstone of backend development for decades, powering everything from enterprise systems to cloud-native microservices. Kotlin, first released in 2011 and officially supported by Spring since 2017, offers a modern JVM alternative that has steadily gained traction among developers.&lt;/p&gt;
+&lt;p&gt;In 2025, both Java and Kotlin are mature, production-ready, and well-supported in the Spring ecosystem. But when starting a &lt;strong&gt;new&lt;/strong&gt; project, it’s worth asking: which language provides more advantages today?&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;built-in-features-vs-external-dependencies&#34;&gt;Built-In Features vs. External Dependencies
+&lt;/h2&gt;&lt;p&gt;In Java, some advanced capabilities require additional libraries, such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;jSpecify&lt;/strong&gt; – for nullability annotations&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Vavr&lt;/strong&gt; – for functional programming utilities&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Lombok&lt;/strong&gt; – for reducing boilerplate code&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;MapStruct&lt;/strong&gt; – for object mapping&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These libraries are useful, but they add extra setup, dependency management, and potential compatibility issues over time.&lt;/p&gt;
+&lt;p&gt;Kotlin includes many similar capabilities &lt;strong&gt;natively&lt;/strong&gt;. The result is:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cleaner code with fewer dependencies&lt;/li&gt;
+&lt;li&gt;Reduced maintenance overhead&lt;/li&gt;
+&lt;li&gt;Consistent, “built-in” language-level support rather than relying on third-party solutions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;tooling-and-developer-experience&#34;&gt;Tooling and Developer Experience
+&lt;/h2&gt;&lt;p&gt;Java has made great strides in reducing verbosity, particularly with features like &lt;strong&gt;records&lt;/strong&gt;, &lt;strong&gt;var&lt;/strong&gt;, and &lt;strong&gt;pattern matching&lt;/strong&gt;. However, Kotlin takes this a step further with language constructs that are inherently more concise and expressive.&lt;/p&gt;
+&lt;p&gt;This difference is not just about avoiding getters and setters. Kotlin’s design encourages:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Declarative, readable code&lt;/li&gt;
+&lt;li&gt;Fewer repetitive patterns&lt;/li&gt;
+&lt;li&gt;A smoother learning curve for developers coming from modern languages&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;javas-rapid-evolution--and-kotlins-advantage&#34;&gt;Java’s Rapid Evolution — and Kotlin’s Advantage
+&lt;/h2&gt;&lt;p&gt;Java now follows a twice-yearly release cycle, which has brought meaningful improvements to the language. But some of Kotlin’s core features may take years to appear in Java — if they appear at all.&lt;/p&gt;
+&lt;p&gt;Because Kotlin runs on the JVM and is fully interoperable with Java, it benefits from JVM improvements &lt;strong&gt;and&lt;/strong&gt; continues to add its own language features independently.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;key-kotlin-features-for-modern-spring-development&#34;&gt;Key Kotlin Features for Modern Spring Development
+&lt;/h2&gt;&lt;p&gt;Here are some Kotlin features that many teams find hard to give up once adopted:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Null-Safety and Nullability&lt;/strong&gt; – Built into the type system to prevent &lt;code&gt;NullPointerException&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Extension Functions&lt;/strong&gt; – Add methods to existing classes without modifying them.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Higher-Order Functions&lt;/strong&gt; – Functional programming as a first-class citizen.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Inline Functions &amp;amp; Lambdas with Receivers&lt;/strong&gt; – Enable clean DSLs and reduce overhead.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Data Classes&lt;/strong&gt; – Concise, immutable by default, and with auto-generated methods.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Default &amp;amp; Named Parameters&lt;/strong&gt; – Avoids excessive constructor overloading.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Smart Casts&lt;/strong&gt; – Automatic safe casting without extra syntax.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Destructuring Declarations&lt;/strong&gt; – Unpack objects into variables easily.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Top-Level Functions&lt;/strong&gt; – Functions outside classes for cleaner APIs.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Type Inference Everywhere&lt;/strong&gt; – Less boilerplate, more clarity.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Rich Standard Library for Collections&lt;/strong&gt; – Expressive and powerful operations.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Immutability by Default&lt;/strong&gt; – Encourages safer and more predictable code.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion
+&lt;/h2&gt;&lt;p&gt;When starting a new Spring project in 2025, both Java and Kotlin are solid choices.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Java&lt;/strong&gt; offers unmatched stability, a massive ecosystem, and rapid ongoing improvements.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Kotlin&lt;/strong&gt; provides modern language features, reduced boilerplate, and a developer experience that’s both concise and expressive from day one.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For teams looking to balance &lt;strong&gt;productivity&lt;/strong&gt;, &lt;strong&gt;readability&lt;/strong&gt;, and &lt;strong&gt;long-term maintainability&lt;/strong&gt;, Kotlin presents a compelling option — especially when building new services on top of the Spring framework.&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Understanding Software Architecture: Key Insights from Fundamentals of Software Architecture Chapter 1</title>
         <link>http://localhost:1313/post/fundamentals-software-architecture-chapter-1/</link>
         <pubDate>Tue, 29 Jul 2025 00:00:00 +0000</pubDate>
@@ -131,6 +195,7 @@
         
         <guid>http://localhost:1313/post/tidy-first/</guid>
         <description>&lt;img src="http://localhost:1313/post/tidy-first/image.png" alt="Featured image of post Summarizing Tidy First Book" /&gt;
+          &lt;link rel=&#34;stylesheet&#34; href=&#34;http://localhost:1313/css/vendors/admonitions.css&#34;&gt;
     &lt;div class=&#34;admonition info&#34;&gt;
       &lt;div class=&#34;admonition-header&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34;&gt;&lt;path d=&#34;M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336l24 0 0-64-24 0c-13.3 0-24-10.7-24-24s10.7-24 24-24l48 0c13.3 0 24 10.7 24 24l0 88 8 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-80 0c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z&#34;/&gt;&lt;/svg&gt;
         &lt;span&gt;Info&lt;/span&gt;

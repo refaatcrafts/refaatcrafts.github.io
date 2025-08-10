@@ -6,10 +6,26 @@
         <description>Recent content in Categories on Hassan Refaat</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sun, 13 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 10 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Backend</title>
+        <link>http://localhost:1313/categories/backend/</link>
+        <pubDate>Sun, 10 Aug 2025 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/categories/backend/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Programming</title>
+        <link>http://localhost:1313/categories/programming/</link>
+        <pubDate>Sun, 10 Aug 2025 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/categories/programming/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>Books</title>
         <link>http://localhost:1313/categories/books/</link>
-        <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
+        <pubDate>Tue, 29 Jul 2025 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/categories/books/</guid>
         <description></description>
@@ -17,7 +33,7 @@
         <item>
         <title>Software Architecture</title>
         <link>http://localhost:1313/categories/software-architecture/</link>
-        <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
+        <pubDate>Tue, 29 Jul 2025 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/categories/software-architecture/</guid>
         <description></description>
@@ -25,7 +41,7 @@
         <item>
         <title>Software Design</title>
         <link>http://localhost:1313/categories/software-design/</link>
-        <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
+        <pubDate>Tue, 29 Jul 2025 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/categories/software-design/</guid>
         <description></description>
@@ -79,19 +95,27 @@
         <description></description>
         </item>
         <item>
-        <title>Programming</title>
-        <link>http://localhost:1313/categories/programming/</link>
-        <pubDate>Wed, 15 Jan 2025 09:00:00 +0000</pubDate>
+        <title>Architecture</title>
+        <link>http://localhost:1313/categories/architecture/</link>
+        <pubDate>Wed, 25 Sep 2024 13:45:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/categories/programming/</guid>
+        <guid>http://localhost:1313/categories/architecture/</guid>
         <description></description>
         </item>
         <item>
-        <title>Web</title>
-        <link>http://localhost:1313/categories/web/</link>
-        <pubDate>Wed, 15 Jan 2025 09:00:00 +0000</pubDate>
+        <title>Microservices</title>
+        <link>http://localhost:1313/categories/microservices/</link>
+        <pubDate>Wed, 25 Sep 2024 13:45:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/categories/web/</guid>
+        <guid>http://localhost:1313/categories/microservices/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>System Design</title>
+        <link>http://localhost:1313/categories/system-design/</link>
+        <pubDate>Wed, 25 Sep 2024 13:45:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/categories/system-design/</guid>
         <description></description>
         </item>
         <item>
@@ -124,30 +148,6 @@
         <pubDate>Sun, 15 Oct 2023 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/categories/tutorials/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Architecture</title>
-        <link>http://localhost:1313/categories/architecture/</link>
-        <pubDate>Fri, 25 Aug 2023 13:45:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/categories/architecture/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Microservices</title>
-        <link>http://localhost:1313/categories/microservices/</link>
-        <pubDate>Fri, 25 Aug 2023 13:45:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/categories/microservices/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>System Design</title>
-        <link>http://localhost:1313/categories/system-design/</link>
-        <pubDate>Fri, 25 Aug 2023 13:45:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/categories/system-design/</guid>
         <description></description>
         </item>
         <item>

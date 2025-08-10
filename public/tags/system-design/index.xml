@@ -6,23 +6,25 @@
         <description>Recent content in System-Design on Hassan Refaat</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sun, 13 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/system-design/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 29 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/system-design/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Understanding Software Architecture: Key Insights from Fundamentals of Software Architecture Chapter 1</title>
         <link>http://localhost:1313/post/fundamentals-software-architecture-chapter-1/</link>
-        <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
+        <pubDate>Tue, 29 Jul 2025 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/post/fundamentals-software-architecture-chapter-1/</guid>
-        <description>&lt;img src="http://localhost:1313/post/fundamentals-software-architecture-chapter-1/image.png" alt="Featured image of post Understanding Software Architecture: Key Insights from Fundamentals of Software Architecture Chapter 1" /&gt;&lt;p&gt;Software architecture remains one of the most challenging fields to define clearly. Unlike traditional engineering disciplines with well-established career paths, software architecture is constantly evolving, making any rigid definition quickly obsolete. This exploration of Chapter 1 from &amp;ldquo;Fundamentals of Software Architecture&amp;rdquo; reveals why this ambiguity exists and what it means for modern software architects.&lt;/p&gt;
+        <description>&lt;img src="http://localhost:1313/post/fundamentals-software-architecture-chapter-1/image.png" alt="Featured image of post Understanding Software Architecture: Key Insights from Fundamentals of Software Architecture Chapter 1" /&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: This blog post is based on my personal notes but rewritten and restructured by AI.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Software architecture remains one of the most &lt;strong&gt;challenging fields to define clearly&lt;/strong&gt;. Unlike traditional engineering disciplines with well-established career paths, software architecture is &lt;em&gt;constantly evolving&lt;/em&gt;, making any rigid definition quickly obsolete. This exploration of Chapter 1 from &lt;em&gt;&lt;strong&gt;&amp;ldquo;Fundamentals of Software Architecture&amp;rdquo;&lt;/strong&gt;&lt;/em&gt; reveals why this ambiguity exists and what it means for modern software architects.&lt;/p&gt;
 &lt;h2 id=&#34;the-challenge-of-definition&#34;&gt;The Challenge of Definition
-&lt;/h2&gt;&lt;p&gt;The difficulty in defining software architecture isn&amp;rsquo;t accidental—it&amp;rsquo;s fundamental to the field itself. As Ralph Johnson eloquently puts it:&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;The difficulty in defining software architecture isn&amp;rsquo;t accidental—it&amp;rsquo;s &lt;strong&gt;fundamental to the field itself&lt;/strong&gt;. As Ralph Johnson eloquently puts it:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&amp;ldquo;Architecture is about the important stuff… whatever that is.&amp;rdquo;&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;This seemingly vague statement actually captures a profound truth: architecture is inherently contextual. What&amp;rsquo;s architecturally significant in a high-frequency trading system differs vastly from what matters in a content management system.&lt;/p&gt;
-&lt;p&gt;Modern architects face additional complexity beyond traditional code concerns. They must collaborate with business teams, operations, and various organizational departments. The rise of DevOps has fundamentally changed how systems are built and operated, requiring architects to update their approaches accordingly.&lt;/p&gt;
+&lt;p&gt;This seemingly vague statement actually captures a profound truth: architecture is &lt;em&gt;inherently contextual&lt;/em&gt;. What&amp;rsquo;s architecturally significant in a high-frequency trading system differs vastly from what matters in a content management system.&lt;/p&gt;
+&lt;p&gt;Modern architects face additional complexity beyond traditional code concerns. They must collaborate with business teams, operations, and various organizational departments. The rise of &lt;strong&gt;DevOps&lt;/strong&gt; has fundamentally changed how systems are built and operated, requiring architects to update their approaches accordingly.&lt;/p&gt;
 &lt;h2 id=&#34;a-comprehensive-definition-of-software-architecture&#34;&gt;A Comprehensive Definition of Software Architecture
 &lt;/h2&gt;&lt;p&gt;Rather than settling for vague metaphors like &amp;ldquo;system blueprint,&amp;rdquo; the book provides a concrete definition built on four interconnected dimensions:&lt;/p&gt;
 &lt;h3 id=&#34;1-structure-of-the-system&#34;&gt;1. Structure of the System
-&lt;/h3&gt;&lt;p&gt;This refers to the architectural style—microservices, layered architecture, microkernel, etc. However, simply stating &amp;ldquo;it&amp;rsquo;s a microservices architecture&amp;rdquo; tells only part of the story. The structure must be understood in conjunction with the other dimensions.&lt;/p&gt;
+&lt;/h3&gt;&lt;p&gt;This refers to the architectural style—&lt;em&gt;microservices&lt;/em&gt;, &lt;em&gt;layered architecture&lt;/em&gt;, &lt;em&gt;microkernel&lt;/em&gt;, etc. However, simply stating &amp;ldquo;it&amp;rsquo;s a microservices architecture&amp;rdquo; tells only part of the story. The structure must be understood in conjunction with the other dimensions.&lt;/p&gt;
 &lt;h3 id=&#34;2-architecture-characteristics-the--ilities&#34;&gt;2. Architecture Characteristics (The &amp;ldquo;-ilities&amp;rdquo;)
 &lt;/h3&gt;&lt;p&gt;These define the success criteria of a system and are generally orthogonal to functionality. Key characteristics include:&lt;/p&gt;
 &lt;ul&gt;
@@ -32,7 +34,7 @@
 &lt;li&gt;&lt;strong&gt;Availability&lt;/strong&gt;: System uptime requirements&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Reliability&lt;/strong&gt;: Consistency of system behavior&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;These characteristics are crucial—a system might implement all required features perfectly but fail if it can&amp;rsquo;t meet performance or availability requirements.&lt;/p&gt;
+&lt;p&gt;These characteristics are crucial—a system might implement all required features perfectly but &lt;strong&gt;fail&lt;/strong&gt; if it can&amp;rsquo;t meet performance or availability requirements.&lt;/p&gt;
 &lt;h3 id=&#34;3-architecture-decisions&#34;&gt;3. Architecture Decisions
 &lt;/h3&gt;&lt;p&gt;These are the rules that dictate system construction, acting as constraints that guide development teams. For example, in a layered architecture, a decision might restrict the presentation layer from directly accessing the database.&lt;/p&gt;
 &lt;p&gt;Architecture decisions can include formal exceptions called &lt;strong&gt;variances&lt;/strong&gt;, typically managed by an Architecture Review Board (ARB) or chief architect when strict adherence would be counterproductive.&lt;/p&gt;

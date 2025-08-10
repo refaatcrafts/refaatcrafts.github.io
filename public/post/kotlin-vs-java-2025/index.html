@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="A neutral comparison of Kotlin and Java for starting new Spring projects in 2025, covering language features, tooling, and developer experience.">
+<title>Kotlin vs. Java for New Spring Projects: A 2025 Perspective</title>
+
+<link rel='canonical' href='http://localhost:1313/post/kotlin-vs-java-2025/'>
+
+<link rel="stylesheet" href="/scss/style.min.946cca6c6259ef94ac55abfae7c7bf3291ea3ed5eea17ef77500b257217c6710.css"><meta property='og:title' content="Kotlin vs. Java for New Spring Projects: A 2025 Perspective">
+<meta property='og:description' content="A neutral comparison of Kotlin and Java for starting new Spring projects in 2025, covering language features, tooling, and developer experience.">
+<meta property='og:url' content='http://localhost:1313/post/kotlin-vs-java-2025/'>
+<meta property='og:site_name' content='Hassan Refaat'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Kotlin' /><meta property='article:tag' content='Java' /><meta property='article:tag' content='Spring' /><meta property='article:tag' content='Backend Development' /><meta property='article:tag' content='JVM' /><meta property='article:published_time' content='2025-08-10T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-08-10T00:00:00&#43;00:00'/><meta property='og:image' content='http://localhost:1313/post/kotlin-vs-java-2025/image.png' />
+<meta name="twitter:title" content="Kotlin vs. Java for New Spring Projects: A 2025 Perspective">
+<meta name="twitter:description" content="A neutral comparison of Kotlin and Java for starting new Spring projects in 2025, covering language features, tooling, and developer experience."><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='http://localhost:1313/post/kotlin-vs-java-2025/image.png' />
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/favicon/site.webmanifest">
+<link rel="shortcut icon" href="/favicon/favicon.ico">
+<link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    <img src="/img/gogo.png" width="300" height="300" class="site-logo" loading="lazy" alt="Avatar">
+                
+                </a>
+                
+                    <span class="emoji">🚀</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Hassan Refaat</a></h1>
+            <h2 class="site-description">Crafting elegant solutions through code</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://linkedin.com/in/YourLinkedInProfile'
+                        target="_blank"
+                        title="LinkedIn"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+  <rect x="2" y="9" width="4" height="12"></rect>
+  <circle cx="4" cy="4" r="2"></circle>
+</svg>
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='/resume.pdf'
+                        target="_blank"
+                        title="Resume/CV"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="3" y="2" width="18" height="20" rx="2" ry="2"></rect>
+  <path d="M8 6h8"></path>
+  <path d="M8 10h8"></path>
+  <path d="M8 14h4"></path>
+  <path d="M16 18h.01"></path>
+</svg>
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://twitter.com/YourTwitterHandle'
+                        target="_blank"
+                        title="Twitter"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/profile/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>Profile</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#built-in-features-vs-external-dependencies">Built-In Features vs. External Dependencies</a></li>
+    <li><a href="#tooling-and-developer-experience">Tooling and Developer Experience</a></li>
+    <li><a href="#javas-rapid-evolution--and-kotlins-advantage">Java’s Rapid Evolution — and Kotlin’s Advantage</a></li>
+    <li><a href="#key-kotlin-features-for-modern-spring-development">Key Kotlin Features for Modern Spring Development</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/post/kotlin-vs-java-2025/">
+                <img src="/post/kotlin-vs-java-2025/image_hu_f285dd0435d29625.png"
+                        srcset="/post/kotlin-vs-java-2025/image_hu_f285dd0435d29625.png 800w, /post/kotlin-vs-java-2025/image_hu_6df18858c8604acb.png 1600w"
+                        width="800" 
+                        height="376" 
+                        loading="lazy"
+                        alt="Featured image of post Kotlin vs. Java for New Spring Projects: A 2025 Perspective" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/programming/" >
+                Programming
+            </a>
+        
+            <a href="/categories/backend/" >
+                Backend
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/post/kotlin-vs-java-2025/">Kotlin vs. Java for New Spring Projects: A 2025 Perspective</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            A neutral comparison of Kotlin and Java for starting new Spring projects in 2025, covering language features, tooling, and developer experience.
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Aug 10, 2025</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    3 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>Java has been a cornerstone of backend development for decades, powering everything from enterprise systems to cloud-native microservices. Kotlin, first released in 2011 and officially supported by Spring since 2017, offers a modern JVM alternative that has steadily gained traction among developers.</p>
+<p>In 2025, both Java and Kotlin are mature, production-ready, and well-supported in the Spring ecosystem. But when starting a <strong>new</strong> project, it’s worth asking: which language provides more advantages today?</p>
+<hr>
+<h2 id="built-in-features-vs-external-dependencies">Built-In Features vs. External Dependencies
+</h2><p>In Java, some advanced capabilities require additional libraries, such as:</p>
+<ul>
+<li><strong>jSpecify</strong> – for nullability annotations</li>
+<li><strong>Vavr</strong> – for functional programming utilities</li>
+<li><strong>Lombok</strong> – for reducing boilerplate code</li>
+<li><strong>MapStruct</strong> – for object mapping</li>
+</ul>
+<p>These libraries are useful, but they add extra setup, dependency management, and potential compatibility issues over time.</p>
+<p>Kotlin includes many similar capabilities <strong>natively</strong>. The result is:</p>
+<ul>
+<li>Cleaner code with fewer dependencies</li>
+<li>Reduced maintenance overhead</li>
+<li>Consistent, “built-in” language-level support rather than relying on third-party solutions</li>
+</ul>
+<hr>
+<h2 id="tooling-and-developer-experience">Tooling and Developer Experience
+</h2><p>Java has made great strides in reducing verbosity, particularly with features like <strong>records</strong>, <strong>var</strong>, and <strong>pattern matching</strong>. However, Kotlin takes this a step further with language constructs that are inherently more concise and expressive.</p>
+<p>This difference is not just about avoiding getters and setters. Kotlin’s design encourages:</p>
+<ul>
+<li>Declarative, readable code</li>
+<li>Fewer repetitive patterns</li>
+<li>A smoother learning curve for developers coming from modern languages</li>
+</ul>
+<hr>
+<h2 id="javas-rapid-evolution--and-kotlins-advantage">Java’s Rapid Evolution — and Kotlin’s Advantage
+</h2><p>Java now follows a twice-yearly release cycle, which has brought meaningful improvements to the language. But some of Kotlin’s core features may take years to appear in Java — if they appear at all.</p>
+<p>Because Kotlin runs on the JVM and is fully interoperable with Java, it benefits from JVM improvements <strong>and</strong> continues to add its own language features independently.</p>
+<hr>
+<h2 id="key-kotlin-features-for-modern-spring-development">Key Kotlin Features for Modern Spring Development
+</h2><p>Here are some Kotlin features that many teams find hard to give up once adopted:</p>
+<ol>
+<li><strong>Null-Safety and Nullability</strong> – Built into the type system to prevent <code>NullPointerException</code>.</li>
+<li><strong>Extension Functions</strong> – Add methods to existing classes without modifying them.</li>
+<li><strong>Higher-Order Functions</strong> – Functional programming as a first-class citizen.</li>
+<li><strong>Inline Functions &amp; Lambdas with Receivers</strong> – Enable clean DSLs and reduce overhead.</li>
+<li><strong>Data Classes</strong> – Concise, immutable by default, and with auto-generated methods.</li>
+<li><strong>Default &amp; Named Parameters</strong> – Avoids excessive constructor overloading.</li>
+<li><strong>Smart Casts</strong> – Automatic safe casting without extra syntax.</li>
+<li><strong>Destructuring Declarations</strong> – Unpack objects into variables easily.</li>
+<li><strong>Top-Level Functions</strong> – Functions outside classes for cleaner APIs.</li>
+<li><strong>Type Inference Everywhere</strong> – Less boilerplate, more clarity.</li>
+<li><strong>Rich Standard Library for Collections</strong> – Expressive and powerful operations.</li>
+<li><strong>Immutability by Default</strong> – Encourages safer and more predictable code.</li>
+</ol>
+<hr>
+<h2 id="conclusion">Conclusion
+</h2><p>When starting a new Spring project in 2025, both Java and Kotlin are solid choices.</p>
+<ul>
+<li><strong>Java</strong> offers unmatched stability, a massive ecosystem, and rapid ongoing improvements.</li>
+<li><strong>Kotlin</strong> provides modern language features, reduced boilerplate, and a developer experience that’s both concise and expressive from day one.</li>
+</ul>
+<p>For teams looking to balance <strong>productivity</strong>, <strong>readability</strong>, and <strong>long-term maintainability</strong>, Kotlin presents a compelling option — especially when building new services on top of the Spring framework.</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/kotlin/">Kotlin</a>
+        
+            <a href="/tags/java/">Java</a>
+        
+            <a href="/tags/spring/">Spring</a>
+        
+            <a href="/tags/backend-development/">Backend Development</a>
+        
+            <a href="/tags/jvm/">JVM</a>
+        
+    </section>
+
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/post/spring-boot-rest-api/">
+        
+        
+            <div class="article-image">
+                <img src="/post/spring-boot-rest-api/image.b476e2f1bbd05246ea1ed0fcb7125689_hu_3d8cf2d7473c35a8.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Building RESTful APIs with Spring Boot"
+                        
+                        data-hash="md5-tHbi8bvQUkbqHtD8txJWiQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Building RESTful APIs with Spring Boot</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/post/solid-principles/">
+        
+        
+            <div class="article-image">
+                <img src="/post/solid-principles/image.1da290ffd324ba3d8df74ba3b23a33fb_hu_7fd990c6fbd538ee.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post SOLID Principles in Java: A Comprehensive Guide"
+                        
+                        data-hash="md5-HaKQ/9Mkuj2N90ujsjoz&#43;w==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">SOLID Principles in Java: A Comprehensive Guide</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/post/i-hate-orms/">
+        
+        
+            <div class="article-image">
+                <img src="/post/i-hate-orms/image.edcc6eb234d7ba03719ab9c8b3d5c6f5_hu_2404c9db062bc956.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post I Hate ORMs: Hibernate Edition"
+                        
+                        data-hash="md5-7cxusjTXugNxmrnIs9XG9Q==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">I Hate ORMs: Hibernate Edition</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2025 Hassan Refaat
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.38c9affbe7bd75d582ab1dbf843bad3e1839625efcecc67fb628e94ee9771504.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
