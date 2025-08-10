@@ -8,6 +8,11 @@ image: image.png
 description: "A neutral comparison of Kotlin and Java for starting new Spring projects in 2025, covering language features, tooling, and developer experience."
 ---
 
+> **Note:** This article reflects my personal point of view and insights based on my development experience.  
+> The structure, formatting, and language refinement were assisted by AI to ensure clarity and readability.
+
+---
+
 Java has been a cornerstone of backend development for decades, powering everything from enterprise systems to cloud-native microservices. Kotlin, first released in 2011 and officially supported by Spring since 2017, offers a modern JVM alternative that has steadily gained traction among developers.
 
 In 2025, both Java and Kotlin are mature, production-ready, and well-supported in the Spring ecosystem. But when starting a **new** project, it’s worth asking: which language provides more advantages today?

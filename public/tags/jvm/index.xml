@@ -12,7 +12,11 @@
         <pubDate>Sun, 10 Aug 2025 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/post/kotlin-vs-java-2025/</guid>
-        <description>&lt;img src="http://localhost:1313/post/kotlin-vs-java-2025/image.png" alt="Featured image of post Kotlin vs. Java for New Spring Projects: A 2025 Perspective" /&gt;&lt;p&gt;Java has been a cornerstone of backend development for decades, powering everything from enterprise systems to cloud-native microservices. Kotlin, first released in 2011 and officially supported by Spring since 2017, offers a modern JVM alternative that has steadily gained traction among developers.&lt;/p&gt;
+        <description>&lt;img src="http://localhost:1313/post/kotlin-vs-java-2025/image.png" alt="Featured image of post Kotlin vs. Java for New Spring Projects: A 2025 Perspective" /&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; This article reflects my personal point of view and insights based on my development experience.&lt;br&gt;
+The structure, formatting, and language refinement were assisted by AI to ensure clarity and readability.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;Java has been a cornerstone of backend development for decades, powering everything from enterprise systems to cloud-native microservices. Kotlin, first released in 2011 and officially supported by Spring since 2017, offers a modern JVM alternative that has steadily gained traction among developers.&lt;/p&gt;
 &lt;p&gt;In 2025, both Java and Kotlin are mature, production-ready, and well-supported in the Spring ecosystem. But when starting a &lt;strong&gt;new&lt;/strong&gt; project, it’s worth asking: which language provides more advantages today?&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;built-in-features-vs-external-dependencies&#34;&gt;Built-In Features vs. External Dependencies
