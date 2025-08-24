@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Exploring the mindset shift necessary to think like a software architect, covering the four core facets that define architectural thinking and the balance between breadth and depth.">
+<title>Architectural Thinking: Key Insights from Fundamentals of Software Architecture Chapter 2</title>
+
+<link rel='canonical' href='http://localhost:1313/post/fundamentals-software-architecture-chapter-2/'>
+
+<link rel="stylesheet" href="/scss/style.min.946cca6c6259ef94ac55abfae7c7bf3291ea3ed5eea17ef77500b257217c6710.css"><meta property='og:title' content="Architectural Thinking: Key Insights from Fundamentals of Software Architecture Chapter 2">
+<meta property='og:description' content="Exploring the mindset shift necessary to think like a software architect, covering the four core facets that define architectural thinking and the balance between breadth and depth.">
+<meta property='og:url' content='http://localhost:1313/post/fundamentals-software-architecture-chapter-2/'>
+<meta property='og:site_name' content='Hassan Refaat'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='software-architecture' /><meta property='article:tag' content='engineering-practices' /><meta property='article:tag' content='system-design' /><meta property='article:published_time' content='2025-08-23T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-08-23T00:00:00&#43;00:00'/><meta property='og:image' content='http://localhost:1313/post/fundamentals-software-architecture-chapter-2/image.png' />
+<meta name="twitter:title" content="Architectural Thinking: Key Insights from Fundamentals of Software Architecture Chapter 2">
+<meta name="twitter:description" content="Exploring the mindset shift necessary to think like a software architect, covering the four core facets that define architectural thinking and the balance between breadth and depth."><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='http://localhost:1313/post/fundamentals-software-architecture-chapter-2/image.png' />
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/favicon/site.webmanifest">
+<link rel="shortcut icon" href="/favicon/favicon.ico">
+<link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    <img src="/img/gogo.png" width="300" height="300" class="site-logo" loading="lazy" alt="Avatar">
+                
+                </a>
+                
+                    <span class="emoji">🚀</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Hassan Refaat</a></h1>
+            <h2 class="site-description">Crafting elegant solutions through code</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://linkedin.com/in/YourLinkedInProfile'
+                        target="_blank"
+                        title="LinkedIn"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+  <rect x="2" y="9" width="4" height="12"></rect>
+  <circle cx="4" cy="4" r="2"></circle>
+</svg>
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='/resume.pdf'
+                        target="_blank"
+                        title="Resume/CV"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="3" y="2" width="18" height="20" rx="2" ry="2"></rect>
+  <path d="M8 6h8"></path>
+  <path d="M8 10h8"></path>
+  <path d="M8 14h4"></path>
+  <path d="M16 18h.01"></path>
+</svg>
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://twitter.com/YourTwitterHandle'
+                        target="_blank"
+                        title="Twitter"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/profile/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>Profile</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#architecture-versus-design">Architecture Versus Design</a></li>
+    <li><a href="#technical-breadth">Technical Breadth</a></li>
+    <li><a href="#analyzing-trade-offs">Analyzing Trade-Offs</a></li>
+    <li><a href="#understanding-business-drivers">Understanding Business Drivers</a></li>
+    <li><a href="#balancing-architecture-and-hands-on-coding">Balancing Architecture and Hands-On Coding</a>
+      <ol>
+        <li><a href="#core-idea">Core Idea</a></li>
+        <li><a href="#strategies-to-balance-coding-and-architecture">Strategies to Balance Coding and Architecture</a></li>
+        <li><a href="#authors-key-message">Author&rsquo;s Key Message</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/post/fundamentals-software-architecture-chapter-2/">
+                <img src="/post/fundamentals-software-architecture-chapter-2/image_hu_f4d17048561fbc83.png"
+                        srcset="/post/fundamentals-software-architecture-chapter-2/image_hu_f4d17048561fbc83.png 800w, /post/fundamentals-software-architecture-chapter-2/image_hu_16fb979f01989e0b.png 1600w"
+                        width="800" 
+                        height="397" 
+                        loading="lazy"
+                        alt="Featured image of post Architectural Thinking: Key Insights from Fundamentals of Software Architecture Chapter 2" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/software-architecture/" >
+                Software Architecture
+            </a>
+        
+            <a href="/categories/books/" >
+                Books
+            </a>
+        
+            <a href="/categories/software-design/" >
+                Software Design
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/post/fundamentals-software-architecture-chapter-2/">Architectural Thinking: Key Insights from Fundamentals of Software Architecture Chapter 2</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            Exploring the mindset shift necessary to think like a software architect, covering the four core facets that define architectural thinking and the balance between breadth and depth.
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Aug 23, 2025</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    4 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <blockquote>
+<p><strong>Note</strong>: This blog post is based on my personal notes but rewritten and restructured by AI.</p></blockquote>
+<h1 id="chapter-2-architectural-thinking">Chapter 2: Architectural Thinking
+</h1><p>This chapter explores the mindset shift necessary to think like a software architect. It centers on <strong>four core facets</strong> that define architectural thinking.</p>
+<hr>
+<h2 id="architecture-versus-design">Architecture Versus Design
+</h2><ul>
+<li>Traditionally, architects focused on high-level concerns such as defining <strong>architectural characteristics</strong> (e.g., &ldquo;-ilities&rdquo;), selecting architectural patterns, and designing system components—the foundational &ldquo;building blocks.&rdquo; These artifacts were then &ldquo;handed off&rdquo; to development teams.</li>
+<li>Developers handled lower-level details, including class diagrams, UI screens, source code development, and testing.</li>
+<li>The chapter emphasizes that this <strong>&ldquo;old-school Waterfall approach&rdquo;</strong>—where architecture is static and rigid—<strong>no longer works</strong>. Modern architectures are dynamic and continuously evolving, requiring <strong>&ldquo;tight collaboration between the architect and the development team.&rdquo;</strong></li>
+<li>The authors advocate <strong>breaking down &ldquo;physical and virtual barriers&rdquo;</strong> between architects and developers, fostering a <strong>&ldquo;strong bidirectional relationship&rdquo;</strong> where both are part of the &ldquo;same virtual team.&rdquo; This enables continuous synchronization because architecture and design are &ldquo;deeply intertwined.&rdquo;</li>
+</ul>
+<hr>
+<h2 id="technical-breadth">Technical Breadth
+</h2><p><strong>Technical Breadth</strong> distinguishes a software architect&rsquo;s knowledge from that of a developer.</p>
+<ul>
+<li>A <strong>developer</strong> needs deep expertise in a specific area, such as mastering a particular programming language or tool.</li>
+<li>An <strong>architect</strong> must have a broad understanding of many technologies and solutions, prioritizing knowledge of <em>multiple ways</em> to solve problems over deep expertise in a single technology.</li>
+</ul>
+<p>Knowledge can be visualized as a pyramid with three layers:
+<img src="/post/fundamentals-software-architecture-chapter-2/knowledge-pyramid.png"
+	width="1962"
+	height="1202"
+	srcset="/post/fundamentals-software-architecture-chapter-2/knowledge-pyramid_hu_8a87f7825e548112.png 480w, /post/fundamentals-software-architecture-chapter-2/knowledge-pyramid_hu_13893b8acb3d283c.png 1024w"
+	loading="lazy"
+	
+		alt="Knowledge Pyramid"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="163"
+		data-flex-basis="391px"
+	
+></p>
+<ol>
+<li><strong>Deep knowledge:</strong> What you know well (e.g., Java expertise for a Java developer).</li>
+<li><strong>Known unknowns:</strong> Technologies you&rsquo;ve heard of but aren&rsquo;t expert in (e.g., awareness of Clojure).</li>
+<li><strong>Unknown unknowns:</strong> Technologies or ideas you haven&rsquo;t encountered but might be ideal solutions.</li>
+</ol>
+<p>As one transitions from developer to architect:</p>
+<ul>
+<li>The focus shifts from depth to breadth.</li>
+<li>The top two layers (what you know and what you know you don&rsquo;t know) become increasingly important.</li>
+<li>It&rsquo;s normal to trade some depth for breadth.</li>
+</ul>
+<p><strong>Why this matters:</strong> Architects who fail to broaden their knowledge risk falling into <strong>&ldquo;stale expertise&rdquo;</strong> or the <strong>&ldquo;Frozen Caveman Anti-Pattern,&rdquo;</strong> where outdated solutions persist simply due to familiarity.</p>
+<p><strong>Maintaining breadth:</strong></p>
+<ul>
+<li>Allocate time daily for learning new things (e.g., the <strong>&ldquo;20-minute rule&rdquo;</strong>).</li>
+<li>Use resources like <strong>InfoQ</strong>, <strong>DZone Refcardz</strong>, and the <strong>ThoughtWorks Technology Radar</strong>.</li>
+</ul>
+<p><strong>Bottom line:</strong> Broad technical knowledge equips architects to identify more solutions and make smarter design decisions.</p>
+<hr>
+<h2 id="analyzing-trade-offs">Analyzing Trade-Offs
+</h2><p>Architectural thinking requires recognizing and evaluating <em>trade-offs</em> in every solution.</p>
+<blockquote>
+<p><strong>&ldquo;Architecture is the stuff you can&rsquo;t Google.&rdquo;</strong> – Mark Richards</p></blockquote>
+<p>There is no universal &ldquo;best&rdquo; answer for architectural decisions because solutions depend on context, including deployment environment, business drivers, company culture, budget, timeframes, and team skills.</p>
+<blockquote>
+<p><strong>&ldquo;Programmers know the benefits of everything and the trade-offs of nothing. Architects need to understand both.&rdquo;</strong> – Rich Hickey</p></blockquote>
+<blockquote>
+<p><strong>&ldquo;There are no right or wrong answers in architecture—only trade-offs.&rdquo;</strong> – Neal Ford</p></blockquote>
+<p>For example, choosing between <strong>topics</strong> (publish-subscribe) and <strong>queues</strong> (point-to-point) messaging in an auction system involves trade-offs:</p>
+<ul>
+<li><strong>Topics</strong> offer greater <em>extensibility</em> and <em>decoupling</em> but sacrifice <em>security</em>, <em>heterogeneous data support</em>, and <em>monitoring/scalability</em>.</li>
+<li>The best choice depends on priorities like flexibility versus security or scalability versus ease of change.</li>
+</ul>
+<p><strong>Key takeaway:</strong> Great architects weigh trade-offs carefully, selecting solutions that best fit their specific context rather than blindly adopting popular options.</p>
+<hr>
+<h2 id="understanding-business-drivers">Understanding Business Drivers
+</h2><p>Architects must understand the business drivers underpinning a system&rsquo;s success and translate these into architectural characteristics such as scalability, performance, and availability. This requires domain knowledge and collaboration with stakeholders to identify, qualify, and measure these characteristics against business needs.</p>
+<hr>
+<h2 id="balancing-architecture-and-hands-on-coding">Balancing Architecture and Hands-On Coding
+</h2><h3 id="core-idea">Core Idea
+</h3><p>A successful architect maintains technical depth through hands-on coding while avoiding becoming a bottleneck.</p>
+<hr>
+<h3 id="strategies-to-balance-coding-and-architecture">Strategies to Balance Coding and Architecture
+</h3><ol>
+<li>
+<p><strong>Avoid becoming a bottleneck:</strong></p>
+<ul>
+<li>Do not own critical-path or framework code that slows team progress.</li>
+<li>Instead, code business functionality a few iterations ahead to:
+<ul>
+<li>Stay connected to production code.</li>
+<li>Empower the team to own complex critical components.</li>
+<li>Relate to the team&rsquo;s challenges.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Stay hands-on without blocking development:</strong></p>
+<ul>
+<li>Build <strong>Proof-of-Concepts (POCs)</strong> to evaluate new technologies; always write production-quality code since POCs often evolve into the codebase.</li>
+<li>Address <strong>technical debt</strong> or <strong>architecture stories</strong>, which have lower priority.</li>
+<li>Fix bugs to understand system weaknesses while supporting the team.</li>
+<li>Automate repetitive tasks by creating scripts or tools (e.g., lint checks, refactoring tools, architecture compliance).</li>
+<li>Write architectural compliance tests using tools like <strong>ArchUnit</strong> or custom fitness functions.</li>
+<li>Conduct frequent code reviews to ensure architecture alignment and mentor developers.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="authors-key-message">Author&rsquo;s Key Message
+</h3><ul>
+<li>Architecture is not just about diagrams and meetings; continuous coding is essential to remain relevant and credible.</li>
+<li>Choose coding tasks that add value without impeding the team.</li>
+<li>Use coding to strengthen the system, guide the team, and keep skills sharp.</li>
+</ul>
+<hr>
+<p>This summary distills the chapter&rsquo;s core concepts on architectural thinking, balancing breadth and depth, collaboration, trade-offs, and business alignment essential for effective software architecture.</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/software-architecture/">Software-Architecture</a>
+        
+            <a href="/tags/engineering-practices/">Engineering-Practices</a>
+        
+            <a href="/tags/system-design/">System-Design</a>
+        
+    </section>
+
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/post/fundamentals-software-architecture-chapter-1/">
+        
+        
+            <div class="article-image">
+                <img src="/post/fundamentals-software-architecture-chapter-1/image.0ad30759eb64fa3aad6ad6fab37b5654_hu_434e41ce1c90f6b1.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Understanding Software Architecture: Key Insights from Fundamentals of Software Architecture Chapter 1"
+                        data-key="fundamentals-software-architecture-chapter-1" 
+                        data-hash="md5-CtMHWetk&#43;jqtatb6s3tWVA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Understanding Software Architecture: Key Insights from Fundamentals of Software Architecture Chapter 1</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/post/understanding-cqrs-pattern/">
+        
+        
+            <div class="article-image">
+                <img src="/post/understanding-cqrs-pattern/image.2f79d412b7a861ec1d7b435418da7ef3_hu_ac8925b5672f83aa.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Understanding CQRS Pattern with Java Examples"
+                        
+                        data-hash="md5-L3nUEreoYewde0NUGNp&#43;8w==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Understanding CQRS Pattern with Java Examples</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/post/tidy-first/">
+        
+        
+            <div class="article-image">
+                <img src="/post/tidy-first/image.167353c7e76b92e771304b434954e7cb_hu_4a63cf7501502102.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Summarizing Tidy First Book"
+                        
+                        data-hash="md5-FnNTx&#43;drkudxMEtDSVTnyw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Summarizing Tidy First Book</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/post/solid-principles/">
+        
+        
+            <div class="article-image">
+                <img src="/post/solid-principles/image.1da290ffd324ba3d8df74ba3b23a33fb_hu_7fd990c6fbd538ee.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post SOLID Principles in Java: A Comprehensive Guide"
+                        
+                        data-hash="md5-HaKQ/9Mkuj2N90ujsjoz&#43;w==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">SOLID Principles in Java: A Comprehensive Guide</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2025 Hassan Refaat
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.38c9affbe7bd75d582ab1dbf843bad3e1839625efcecc67fb628e94ee9771504.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

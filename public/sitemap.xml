@@ -3,18 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-08-15T09:00:00+00:00</lastmod>
+    <lastmod>2025-08-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/fundamentals-software-architecture-chapter-2/</loc>
+    <lastmod>2025-08-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/books/</loc>
+    <lastmod>2025-08-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2025-08-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/engineering-practices/</loc>
+    <lastmod>2025-08-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/post/</loc>
-    <lastmod>2025-08-15T09:00:00+00:00</lastmod>
+    <lastmod>2025-08-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/software-architecture/</loc>
+    <lastmod>2025-08-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/software-design/</loc>
+    <lastmod>2025-08-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/software-architecture/</loc>
+    <lastmod>2025-08-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/system-design/</loc>
+    <lastmod>2025-08-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-08-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/backend/</loc>
     <lastmod>2025-08-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/backend-development/</loc>
-    <lastmod>2025-08-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
     <lastmod>2025-08-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/java/</loc>
@@ -35,31 +59,10 @@
     <loc>http://localhost:1313/tags/spring/</loc>
     <lastmod>2025-08-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2025-08-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/books/</loc>
-    <lastmod>2025-07-29T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/design-patterns/</loc>
     <lastmod>2025-07-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/engineering-practices/</loc>
-    <lastmod>2025-07-29T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/leadership/</loc>
-    <lastmod>2025-07-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/software-architecture/</loc>
-    <lastmod>2025-07-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/software-design/</loc>
-    <lastmod>2025-07-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/software-architecture/</loc>
-    <lastmod>2025-07-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/system-design/</loc>
     <lastmod>2025-07-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/post/fundamentals-software-architecture-chapter-1/</loc>
