@@ -6,7 +6,277 @@
         <description>Recent content in Software Design on Hassan Refaat</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sat, 23 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/software-design/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 14 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/software-design/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Fundamentals of Software Architecture — Chapter 3: Modularity</title>
+        <link>http://localhost:1313/post/fundamentals-software-architecture-chapter-3/</link>
+        <pubDate>Sun, 14 Sep 2025 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/post/fundamentals-software-architecture-chapter-3/</guid>
+        <description>&lt;img src="http://localhost:1313/post/fundamentals-software-architecture-chapter-3/image.png" alt="Featured image of post Fundamentals of Software Architecture — Chapter 3: Modularity" /&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: This blog post is based on my personal notes but rewritten and restructured by AI.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h1 id=&#34;chapter-3-modularity&#34;&gt;Chapter 3: Modularity
+&lt;/h1&gt;&lt;p&gt;Chapter 3 explores the concept of modularity — the art and science of organizing code into logical, maintainable, and scalable units. It dives into definitions, metrics, and guidelines for designing modular software, using both classic and modern analysis techniques.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;what-is-modularity&#34;&gt;What Is Modularity?
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Modularity&lt;/strong&gt; is the logical grouping of related code. While platforms offer packaging mechanisms (e.g., packages in Java, namespaces in .NET), modularity refers to how we conceptually organize code to improve clarity and maintainability.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt; A Java package like &lt;code&gt;com.mycompany.customer&lt;/code&gt; would logically contain all customer-related code.&lt;/p&gt;
+&lt;h3 id=&#34;why-its-important&#34;&gt;Why It&amp;rsquo;s Important
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;It&amp;rsquo;s a foundational architectural trait — even if it&amp;rsquo;s not explicitly mentioned in requirements&lt;/li&gt;
+&lt;li&gt;Without it, systems become chaotic and hard to maintain&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;key-takeaways&#34;&gt;Key Takeaways
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Modularity is logical, not always physical&lt;/li&gt;
+&lt;li&gt;It&amp;rsquo;s critical for reusability, clarity, and scalability&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;how-to-use-it&#34;&gt;How to Use It
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Use packages, folders, and namespaces to group related code logically&lt;/li&gt;
+&lt;li&gt;Design modules around domain functionality or bounded contexts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;measuring-modularity&#34;&gt;Measuring Modularity
+&lt;/h2&gt;&lt;p&gt;To understand and improve modularity, we use three main concepts:&lt;/p&gt;
+&lt;h3 id=&#34;1-cohesion&#34;&gt;1. Cohesion
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Cohesion&lt;/strong&gt; = How closely related the internal parts of a module are.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;High cohesion&lt;/strong&gt; → Everything in the module works together&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Low cohesion&lt;/strong&gt; → Unrelated things are grouped together (bad)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;why-its-important-1&#34;&gt;Why It&amp;rsquo;s Important
+&lt;/h4&gt;&lt;p&gt;High cohesion means modules are easier to understand, maintain, and reuse.&lt;/p&gt;
+&lt;h4 id=&#34;key-takeaways-1&#34;&gt;Key Takeaways
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Aim for functional cohesion (the best form)&lt;/li&gt;
+&lt;li&gt;Avoid coincidental cohesion (the worst)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;how-to-use-it-1&#34;&gt;How to Use It
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Use tools that calculate LCOM (Lack of Cohesion in Methods) to spot problem areas&lt;/li&gt;
+&lt;li&gt;Refactor modules/classes with unrelated responsibilities&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-coupling&#34;&gt;2. Coupling
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Coupling&lt;/strong&gt; = The degree to which a module depends on others.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Afferent coupling (Ca)&lt;/strong&gt; = Incoming connections (how many other modules use this one)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Efferent coupling (Ce)&lt;/strong&gt; = Outgoing connections (how many modules this one uses)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;why-its-important-2&#34;&gt;Why It&amp;rsquo;s Important
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;High coupling increases fragility and change risk&lt;/li&gt;
+&lt;li&gt;Low coupling improves independence and testability&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;key-takeaways-2&#34;&gt;Key Takeaways
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Lower is better for most coupling&lt;/li&gt;
+&lt;li&gt;Be cautious with highly coupled modules&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;how-to-use-it-2&#34;&gt;How to Use It
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Use tools to identify modules with high Ce or Ca&lt;/li&gt;
+&lt;li&gt;Refactor to reduce unnecessary dependencies&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3-abstractness-instability--distance-from-main-sequence&#34;&gt;3. Abstractness, Instability &amp;amp; Distance from Main Sequence
+&lt;/h3&gt;&lt;p&gt;These metrics help evaluate modular balance in object-oriented systems.&lt;/p&gt;
+&lt;h4 id=&#34;abstractness-a&#34;&gt;Abstractness (A)
+&lt;/h4&gt;&lt;p&gt;Ratio of abstract elements (interfaces, abstract classes) to total.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Formula:&lt;/strong&gt; &lt;code&gt;A = #abstract / (#abstract + #concrete)&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;instability-i&#34;&gt;Instability (I)
+&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;Formula:&lt;/strong&gt; &lt;code&gt;I = Ce / (Ce + Ca)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Indicates volatility — how easily a module may break due to changes.&lt;/p&gt;
+&lt;h4 id=&#34;distance-from-main-sequence-d&#34;&gt;Distance from Main Sequence (D)
+&lt;/h4&gt;&lt;p&gt;Measures deviation from the ideal balance.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Formula:&lt;/strong&gt; &lt;code&gt;D = |A + I - 1|&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Near 0 = balanced&lt;/li&gt;
+&lt;li&gt;High = problematic (too abstract or too concrete)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;why-its-important-3&#34;&gt;Why It&amp;rsquo;s Important
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Helps spot fragile or useless modules&lt;/li&gt;
+&lt;li&gt;Guides toward structural balance&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;key-takeaways-3&#34;&gt;Key Takeaways
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Aim for low D (close to the &amp;ldquo;main sequence&amp;rdquo;)&lt;/li&gt;
+&lt;li&gt;Use visual diagrams to identify modules in the zone of pain or zone of uselessness&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;how-to-use-it-3&#34;&gt;How to Use It
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Use static analysis tools to compute A, I, D&lt;/li&gt;
+&lt;li&gt;Refactor modules to move closer to ideal balance&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;connascence-a-deeper-look-at-coupling&#34;&gt;Connascence: A Deeper Look at Coupling
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Connascence&lt;/strong&gt; = If changing one component forces another to change to maintain correctness.&lt;/p&gt;
+&lt;h3 id=&#34;static-connascence-code-level-compile-time&#34;&gt;Static Connascence (Code-Level, Compile-Time)
+&lt;/h3&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Type&lt;/th&gt;
+          &lt;th&gt;Description&lt;/th&gt;
+          &lt;th&gt;Example&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;CoN (Name)&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Shared method/variable names&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;getCustomer()&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;CoT (Type)&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Shared data types&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;int age&lt;/code&gt; vs &lt;code&gt;String age&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;CoM (Meaning)&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Shared conventions or magic values&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;int TRUE = 1&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;CoP (Position)&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Parameter order dependencies&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;update(String name, ID)&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;CoA (Algorithm)&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Shared logic/algorithms&lt;/td&gt;
+          &lt;td&gt;Shared hashing logic&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;CoI (Identity)&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Shared references or resources&lt;/td&gt;
+          &lt;td&gt;Shared distributed queue&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;dynamic-connascence-runtime-level&#34;&gt;Dynamic Connascence (Runtime-Level)
+&lt;/h3&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Type&lt;/th&gt;
+          &lt;th&gt;Description&lt;/th&gt;
+          &lt;th&gt;Example&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;CoE (Execution)&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Order of operations matters&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;send()&lt;/code&gt; before &lt;code&gt;setSubject()&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;CoT (Timing)&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Concurrent operations cause race conditions&lt;/td&gt;
+          &lt;td&gt;Multithreading errors&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;CoV (Values)&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Multiple values must be changed together&lt;/td&gt;
+          &lt;td&gt;DB transactions&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;CoI (Identity)&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Shared runtime identity&lt;/td&gt;
+          &lt;td&gt;Shared cache or singleton&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;connascence-properties&#34;&gt;Connascence Properties
+&lt;/h3&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Property&lt;/th&gt;
+          &lt;th&gt;Meaning&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Strength&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;How hard is it to refactor? Prefer weaker types.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Locality&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Is the connascence local (same module) or remote?&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Degree&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;How many components are affected by the dependency?&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;why-its-important-4&#34;&gt;Why It&amp;rsquo;s Important
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Connascence is actionable — it tells you how coupling happens&lt;/li&gt;
+&lt;li&gt;Helps guide refactoring efforts with precision&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;key-takeaways-4&#34;&gt;Key Takeaways
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Prefer static over dynamic connascence&lt;/li&gt;
+&lt;li&gt;Convert strong connascence to weaker forms&lt;/li&gt;
+&lt;li&gt;Use locality: Strong dependencies are okay when close, not when far apart&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;how-to-use-it-4&#34;&gt;How to Use It
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;During refactoring, reduce CoM to CoN (e.g., use constants)&lt;/li&gt;
+&lt;li&gt;Apply Weirich&amp;rsquo;s rules:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Rule of Degree:&lt;/strong&gt; Convert strong to weak&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Rule of Locality:&lt;/strong&gt; Use weaker forms as distance increases&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;unifying-coupling-and-connascence&#34;&gt;Unifying Coupling and Connascence
+&lt;/h2&gt;&lt;p&gt;This section shows how connascence refines traditional coupling.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Traditional coupling&lt;/strong&gt; = &amp;ldquo;What is connected&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Connascence&lt;/strong&gt; = &amp;ldquo;How it&amp;rsquo;s connected&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;why-its-important-5&#34;&gt;Why It&amp;rsquo;s Important
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Offers a richer vocabulary and tools for evaluating dependencies&lt;/li&gt;
+&lt;li&gt;Bridges classic structured programming with modern design practices&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;how-to-use-it-5&#34;&gt;How to Use It
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Use coupling for high-level analysis&lt;/li&gt;
+&lt;li&gt;Use connascence for precise refactoring strategies&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;from-modules-to-components&#34;&gt;From Modules to Components
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Module&lt;/strong&gt; = Logical unit of related code&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Component&lt;/strong&gt; = Physical deployment unit&lt;/li&gt;
+&lt;li&gt;A component implements one or more modules&lt;/li&gt;
+&lt;li&gt;Components are the primary architectural building blocks&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;why-its-important-6&#34;&gt;Why It&amp;rsquo;s Important
+&lt;/h3&gt;&lt;p&gt;Understanding this distinction is crucial for deployment, scalability, and integration.&lt;/p&gt;
+&lt;h3 id=&#34;how-to-use-it-6&#34;&gt;How to Use It
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Package modules into components thoughtfully (e.g., JARs, DLLs, microservices)&lt;/li&gt;
+&lt;li&gt;Design components to be independently deployable and loosely coupled&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;final-summary&#34;&gt;Final Summary
+&lt;/h2&gt;&lt;p&gt;Modularity is a critical architectural principle that ensures code remains manageable as systems grow. Chapter 3 outlines how to measure and improve modularity using cohesion, coupling, and connascence. These tools help architects identify structural issues and refactor toward healthier systems. Understanding the distinction between modules (logical) and components (physical) is key for deploying scalable software.&lt;/p&gt;
+&lt;h3 id=&#34;most-useful-insights&#34;&gt;Most Useful Insights
+&lt;/h3&gt;&lt;p&gt;✅ &lt;strong&gt;Modularity&lt;/strong&gt; = logical grouping, not necessarily physical separation&lt;br&gt;
+✅ &lt;strong&gt;Cohesion:&lt;/strong&gt; Higher = better&lt;br&gt;
+✅ &lt;strong&gt;Coupling:&lt;/strong&gt; Lower = better&lt;br&gt;
+✅ Use &lt;strong&gt;LCOM&lt;/strong&gt; to measure internal cohesion&lt;br&gt;
+✅ Use &lt;strong&gt;Ca / Ce&lt;/strong&gt; to analyze dependency structure&lt;br&gt;
+✅ Use &lt;strong&gt;Abstractness, Instability, D&lt;/strong&gt; for balance metrics&lt;br&gt;
+✅ &lt;strong&gt;Connascence&lt;/strong&gt; helps understand and refactor coupling&lt;br&gt;
+✅ Prefer &lt;strong&gt;static, weak, local&lt;/strong&gt; connascence&lt;br&gt;
+✅ Use &lt;strong&gt;components&lt;/strong&gt; as the main deployable units&lt;br&gt;
+✅ &lt;strong&gt;Trade-offs&lt;/strong&gt; are inevitable — use metrics to choose wisely&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Architectural Thinking: Key Insights from Fundamentals of Software Architecture Chapter 2</title>
         <link>http://localhost:1313/post/fundamentals-software-architecture-chapter-2/</link>
         <pubDate>Sat, 23 Aug 2025 00:00:00 +0000</pubDate>
