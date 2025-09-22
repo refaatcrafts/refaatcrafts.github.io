@@ -3,12 +3,45 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-09-14T00:00:00+00:00</lastmod>
+    <lastmod>2025-09-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/books/</loc>
-    <lastmod>2025-09-14T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/categories/best-practices/</loc>
+    <lastmod>2025-09-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2025-09-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/clean-code/</loc>
+    <lastmod>2025-09-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/</loc>
+    <lastmod>2025-09-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/software-development/</loc>
+    <lastmod>2025-09-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/software-quality/</loc>
+    <lastmod>2025-09-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-09-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/tdd/</loc>
+    <lastmod>2025-09-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/testing/</loc>
+    <lastmod>2025-09-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/testing-strategy/</loc>
+    <lastmod>2025-09-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/unit-testing/</loc>
+    <lastmod>2025-09-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/working-effectively-with-unit-tests/</loc>
+    <lastmod>2025-09-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/books/</loc>
     <lastmod>2025-09-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/cohesion/</loc>
@@ -26,9 +59,6 @@
     <loc>http://localhost:1313/tags/modularity/</loc>
     <lastmod>2025-09-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/</loc>
-    <lastmod>2025-09-14T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/categories/software-architecture/</loc>
     <lastmod>2025-09-14T00:00:00+00:00</lastmod>
   </url><url>
@@ -39,9 +69,6 @@
     <lastmod>2025-09-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/system-design/</loc>
-    <lastmod>2025-09-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-09-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/post/fundamentals-software-architecture-chapter-2/</loc>
@@ -82,9 +109,6 @@
   </url><url>
     <loc>http://localhost:1313/post/fundamentals-software-architecture-chapter-1/</loc>
     <lastmod>2025-07-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/clean-code/</loc>
-    <lastmod>2025-07-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/refactoring/</loc>
     <lastmod>2025-07-13T00:00:00+00:00</lastmod>
@@ -195,21 +219,6 @@
     <lastmod>2023-12-10T10:15:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/post/test-driven-development-principles/</loc>
-    <lastmod>2023-11-05T14:30:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/software-development/</loc>
-    <lastmod>2023-11-05T14:30:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/software-quality/</loc>
-    <lastmod>2023-11-05T14:30:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/tdd/</loc>
-    <lastmod>2023-11-05T14:30:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/testing/</loc>
-    <lastmod>2023-11-05T14:30:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/unit-testing/</loc>
     <lastmod>2023-11-05T14:30:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/post/adding-related-content-to-hugo/</loc>

@@ -6,7 +6,128 @@
         <description>Recent content in Testing on Hassan Refaat</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sun, 05 Nov 2023 14:30:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/testing/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 22 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/testing/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Working Effectively with Unit Tests: Key Lessons for Better Testing</title>
+        <link>http://localhost:1313/post/working-effectively-with-unit-tests/</link>
+        <pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/post/working-effectively-with-unit-tests/</guid>
+        <description>&lt;img src="http://localhost:1313/post/working-effectively-with-unit-tests/image.png" alt="Featured image of post Working Effectively with Unit Tests: Key Lessons for Better Testing" /&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: This blog post is based on my personal notes but rewritten and restructured by AI.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h1 id=&#34;working-effectively-with-unit-tests-key-lessons-for-better-testing&#34;&gt;Working Effectively with Unit Tests: Key Lessons for Better Testing
+&lt;/h1&gt;&lt;p&gt;Unit tests are often treated as an afterthought, yet they are one of the most powerful tools we have for building reliable, maintainable software. But writing good tests is not just about achieving coverage numbers — it&amp;rsquo;s about designing tests that provide value without becoming a burden.&lt;/p&gt;
+&lt;p&gt;After reading Working Effectively with Unit Tests, I gathered some of the most impactful lessons that reshape how we think about testing. This post summarizes those ideas and offers practical guidelines you can apply to your own projects.&lt;/p&gt;
+&lt;h2 id=&#34;why-we-write-tests-motivators-matter&#34;&gt;Why We Write Tests: Motivators Matter
+&lt;/h2&gt;&lt;p&gt;A common trap is following testing practices because &amp;ldquo;an expert said so.&amp;rdquo; But different experts often contradict each other. Instead, tests should always map back to clear motivators, such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Validate the system&lt;/strong&gt;: Get fast feedback that things work as expected, and protect against regressions.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Enable refactoring&lt;/strong&gt;: Tests make change safe — and hard-to-test code often reveals design problems worth fixing.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Document the behavior&lt;/strong&gt;: Tests act as living documentation of how the system is supposed to behave.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If a test isn&amp;rsquo;t providing value in at least one of these ways, its ROI is probably negative.&lt;/p&gt;
+&lt;h2 id=&#34;roi-tests-as-investments&#34;&gt;ROI: Tests as Investments
+&lt;/h2&gt;&lt;p&gt;One of the book&amp;rsquo;s central themes is to think about tests as investments. Writing and maintaining tests cost time and effort — so the &amp;ldquo;return&amp;rdquo; needs to justify that cost.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;High ROI tests&lt;/strong&gt;: Catch regressions, document critical behaviors, and make refactoring safer.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Low ROI tests&lt;/strong&gt;: Cover trivial details, rely heavily on implementation, or break easily during small changes.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Negative ROI tests&lt;/strong&gt;: Cost more to maintain than the value they provide — these should be refactored or deleted.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This ROI mindset helps guide:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;What to test&lt;/strong&gt; → Focus on business-critical logic rather than edge-case trivia.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;How to test&lt;/strong&gt; → Avoid brittle patterns like overuse of setup methods or unnecessary mocks.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;When to delete&lt;/strong&gt; → Tests lose value over time; deleting a low-value test can be the best kind of refactoring.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;👉 &lt;strong&gt;Key takeaway&lt;/strong&gt;: ROI is a guiding principle. Always ask: Is this test still worth it?&lt;/p&gt;
+&lt;h2 id=&#34;damp-vs-dry-why-readability-wins-in-tests&#34;&gt;DAMP vs. DRY: Why Readability Wins in Tests
+&lt;/h2&gt;&lt;p&gt;We&amp;rsquo;ve all heard about DRY (Don&amp;rsquo;t Repeat Yourself) in production code. It reduces duplication and helps maintain consistency. But in tests, applying DRY too aggressively often backfires.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Shared @Before setups, ObjectMothers, and helper assertions hide intent.&lt;/li&gt;
+&lt;li&gt;Indirection increases cognitive load — you need to jump around the file to understand what&amp;rsquo;s happening.&lt;/li&gt;
+&lt;li&gt;Brittle designs emerge because tests become too tightly coupled to abstractions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The book calls this &amp;ldquo;DRY with a blowtorch.&amp;rdquo; Instead, tests should prefer DAMP (Descriptive And Maintainable Procedures):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Keep setup inline so every test is self-contained.&lt;/li&gt;
+&lt;li&gt;Replace loops with individual tests for clearer feedback.&lt;/li&gt;
+&lt;li&gt;Use literal expectations (e.g., &lt;code&gt;assertEquals(5.0, charge)&lt;/code&gt;) instead of variables.&lt;/li&gt;
+&lt;li&gt;Use Data Builders (not ObjectMothers) to create flexible objects with sensible defaults.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;👉 &lt;strong&gt;Takeaway&lt;/strong&gt;: Tests are for humans first, machines second. Optimize for readability and independence.&lt;/p&gt;
+&lt;h2 id=&#34;the-code-coverage-myth&#34;&gt;The Code Coverage Myth
+&lt;/h2&gt;&lt;p&gt;Coverage tools (Clover, Cobertura, etc.) are useful, but only as hints.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Low coverage often points to weak testing.&lt;/li&gt;
+&lt;li&gt;High coverage does not guarantee quality — you can have 100% coverage with useless tests.&lt;/li&gt;
+&lt;li&gt;Experts suggest aiming for 80–90%. Anything close to 100% is suspicious and often means wasted effort testing trivial code.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;👉 Focus on meaningful tests, not the percentage.&lt;/p&gt;
+&lt;h2 id=&#34;tests-as-safety-nets-for-refactoring&#34;&gt;Tests as Safety Nets for Refactoring
+&lt;/h2&gt;&lt;p&gt;One of the strongest motivators for testing is enabling safe refactoring. Good tests make sure behavior doesn&amp;rsquo;t break as the implementation evolves.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If a class is painful to test because of dependencies, that&amp;rsquo;s a design smell.&lt;/li&gt;
+&lt;li&gt;Refactor toward smaller, independent components.&lt;/li&gt;
+&lt;li&gt;Use fakes, stubs, or in-memory doubles to isolate external complexity.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;💡 &lt;strong&gt;Rule of thumb&lt;/strong&gt;: if writing a test feels hard, your design may need improvement.&lt;/p&gt;
+&lt;h2 id=&#34;tests-as-living-documentation&#34;&gt;Tests as Living Documentation
+&lt;/h2&gt;&lt;p&gt;Tests don&amp;rsquo;t just catch bugs — they also teach future developers how the system is supposed to work.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;New developers often read tests to understand intent.&lt;/li&gt;
+&lt;li&gt;Even &amp;ldquo;redundant&amp;rdquo; tests may serve as valuable documentation.&lt;/li&gt;
+&lt;li&gt;Be careful when deleting tests that seem unnecessary — you might be throwing away context.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;👉 Treat your test suite as part of your system&amp;rsquo;s documentation.&lt;/p&gt;
+&lt;h2 id=&#34;state-vs-behavior-verification&#34;&gt;State vs. Behavior Verification
+&lt;/h2&gt;&lt;p&gt;Two main &amp;ldquo;schools of testing&amp;rdquo; exist:&lt;/p&gt;
+&lt;h3 id=&#34;state-verification-chicago-school&#34;&gt;State verification (Chicago school):
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Assert results and state after running the code.&lt;/li&gt;
+&lt;li&gt;Fewer mocks, more resilience to refactoring.&lt;/li&gt;
+&lt;li&gt;Great for domain logic, calculations, and value objects.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;behavior-verification-london-school&#34;&gt;Behavior verification (London school):
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Assert interactions with collaborators using mocks.&lt;/li&gt;
+&lt;li&gt;Useful when the effect is an external call (e.g., payment gateway).&lt;/li&gt;
+&lt;li&gt;Can become brittle if overused.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Best practice today&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use state verification for most unit tests.&lt;/li&gt;
+&lt;li&gt;Use behavior verification only at integration boundaries where the interaction itself is the contract.&lt;/li&gt;
+&lt;li&gt;Adopt a hybrid pyramid: many fast state-based unit tests, fewer behavior/contract tests, and a handful of end-to-end tests.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;practical-test-guidelines&#34;&gt;Practical Test Guidelines
+&lt;/h2&gt;&lt;p&gt;The book also offers concrete advice for making tests more effective:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;One assertion per test&lt;/strong&gt; → failures are easier to interpret.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Assert last&lt;/strong&gt; → keep tests in AAA (Arrange–Act–Assert) order.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Use literal expectations&lt;/strong&gt; → clarity over cleverness.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Avoid deep mocks and over-specification&lt;/strong&gt; → brittle tests die fast.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Balance solitary and sociable tests&lt;/strong&gt; → isolation for units, collaboration checks where needed.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Prefer positive checks over negative ones&lt;/strong&gt; → assert what should happen, not what shouldn&amp;rsquo;t.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;👉 In short: tests should be clear, intent-driven, and resilient.&lt;/p&gt;
+&lt;h2 id=&#34;maintainability-above-all&#34;&gt;Maintainability Above All
+&lt;/h2&gt;&lt;p&gt;A test is maintainable if it helps developers quickly identify and fix issues when it fails. To get there:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Avoid &amp;ldquo;magic&amp;rdquo; setups like hidden @Before blocks. Inline your setup.&lt;/li&gt;
+&lt;li&gt;Use builders to simplify object creation while keeping tests explicit.&lt;/li&gt;
+&lt;li&gt;Eliminate tests with negative ROI (e.g., private methods, boilerplate coverage).&lt;/li&gt;
+&lt;li&gt;Introduce custom assertions for repetitive structural checks (assertThrows, assertMoney).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;final-thoughts&#34;&gt;Final Thoughts
+&lt;/h2&gt;&lt;p&gt;Working Effectively with Unit Tests is less about tools or frameworks, and more about mindset:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Prioritize readability over clever abstraction.&lt;/li&gt;
+&lt;li&gt;Keep tests independent and descriptive.&lt;/li&gt;
+&lt;li&gt;Measure value by ROI — the safety, clarity, and documentation they provide, not just coverage numbers.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Done right, tests aren&amp;rsquo;t just safety nets — they&amp;rsquo;re an integral part of design, documentation, and long-term maintainability.&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Core Principles of Test-Driven Development</title>
         <link>http://localhost:1313/post/test-driven-development-principles/</link>
         <pubDate>Sun, 05 Nov 2023 14:30:00 +0000</pubDate>

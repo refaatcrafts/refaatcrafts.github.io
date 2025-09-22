@@ -6,7 +6,31 @@
         <description>Recent content in Categories on Hassan Refaat</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sun, 14 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 22 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Best Practices</title>
+        <link>http://localhost:1313/categories/best-practices/</link>
+        <pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/categories/best-practices/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Software Development</title>
+        <link>http://localhost:1313/categories/software-development/</link>
+        <pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/categories/software-development/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Testing</title>
+        <link>http://localhost:1313/categories/testing/</link>
+        <pubDate>Mon, 22 Sep 2025 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/categories/testing/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>Books</title>
         <link>http://localhost:1313/categories/books/</link>
         <pubDate>Sun, 14 Sep 2025 00:00:00 +0000</pubDate>
@@ -124,22 +148,6 @@
         <pubDate>Sun, 10 Dec 2023 10:15:00 +0000</pubDate>
         
         <guid>http://localhost:1313/categories/web-development/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Software Development</title>
-        <link>http://localhost:1313/categories/software-development/</link>
-        <pubDate>Sun, 05 Nov 2023 14:30:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/categories/software-development/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Testing</title>
-        <link>http://localhost:1313/categories/testing/</link>
-        <pubDate>Sun, 05 Nov 2023 14:30:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/categories/testing/</guid>
         <description></description>
         </item>
         <item>
